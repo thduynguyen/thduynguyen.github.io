@@ -4,4 +4,7 @@
 
 This is awesome!!!
 
-Let's try some LaTeX: $y = x^2$
+Let's try some LaTeX: 
+{% raw %}
+  $$y = x^2$$ --> note that all equations between these tags will not need escaping! 
+{% endraw %}
