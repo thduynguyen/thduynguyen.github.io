@@ -18,13 +18,13 @@ import time
 
 # Data about this site
 BLOG_AUTHOR = "Duy-Nguyen Ta"  # (translatable)
-BLOG_TITLE = "Notes"  # (translatable)
+BLOG_TITLE = "My Nikola Site"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link
-SITE_URL = "http://thduynguyen.github.io"
+SITE_URL = "http://thduynguyen.github.io/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
-# BASE_URL = "http://thduynguyen.github.io"
+# BASE_URL = "https://example.com/"
 BLOG_EMAIL = "thduynguyen@gmail.com"
 BLOG_DESCRIPTION = "This is a demo site for Nikola."  # (translatable)
 
@@ -121,40 +121,40 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 #          with a ``/``, otherwise end them with ``/index.html`` — or
 #          else they won’t be highlighted when active.
 
-# NAVIGATION_LINKS = {
-#     DEFAULT_LANG: (
-#         ("/archive.html", "Archive"),
-#         ("/categories/index.html", "Tags"),
-#         ("/rss.xml", "RSS feed"),
-#     ),
-# }
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ('/index.html', 'Home', 'icon-home'),
-        ('/archive.html', 'Archives', 'icon-folder-open-alt'),
-        ('/categories/index.html', 'Tags', 'icon-tags'),
-        ('/rss.xml', 'RSS', 'icon-rss'),
-        ('/portfolio/portfolio.slides.html', 'Portfolio', 'icon-briefcase'),
-        ('/stories/about-me.html', 'About me', 'icon-user'),
-        ('https://twitter.com/damian_avila', 'My Twitter', 'icon-twitter'),
-        ('https://github.com/damianavila', 'My Github', 'icon-github'),
-        ('https://plus.google.com/u/0/106896109587369688379/posts', 'My Google+', 'icon-google-plus'),
-    ),
-    'es': (
-        ('/es/index.html', 'Inicio', 'icon-home'),
-        ('/es/archive.html', 'Archivos', 'icon-folder-open-alt'),
-        ('/es/categories/index.html', 'Etiquetas', 'icon-tags'),
-        ('/es/rss.xml', 'RSS', 'icon-rss'),
-        ('/es/portfolio/portfolio.slides.html', 'Portafolio', 'icon-briefcase'),
-        ('/es/stories/about-me.html', 'Sobre mi...', 'icon-user'),
-        ('https://twitter.com/damian_avila', 'Mi Twitter', 'icon-twitter'),
-        ('https://github.com/damianavila', 'Mi Github', 'icon-github'),
-        ('https://plus.google.com/u/0/106896109587369688379/posts', 'Mi Google+', 'icon-google-plus'),
+        ("/archive.html", "Archive"),
+        ("/categories/index.html", "Tags"),
+        ("/rss.xml", "RSS feed"),
     ),
 }
+# NAVIGATION_LINKS = {
+#     DEFAULT_LANG: (
+#         ('/index.html', 'Home', 'icon-home'),
+#         ('/archive.html', 'Archives', 'icon-folder-open-alt'),
+#         ('/categories/index.html', 'Tags', 'icon-tags'),
+#         ('/rss.xml', 'RSS', 'icon-rss'),
+#         ('/portfolio/portfolio.slides.html', 'Portfolio', 'icon-briefcase'),
+#         ('/stories/about-me.html', 'About me', 'icon-user'),
+#         ('https://twitter.com/damian_avila', 'My Twitter', 'icon-twitter'),
+#         ('https://github.com/damianavila', 'My Github', 'icon-github'),
+#         ('https://plus.google.com/u/0/106896109587369688379/posts', 'My Google+', 'icon-google-plus'),
+#     ),
+#     'es': (
+#         ('/es/index.html', 'Inicio', 'icon-home'),
+#         ('/es/archive.html', 'Archivos', 'icon-folder-open-alt'),
+#         ('/es/categories/index.html', 'Etiquetas', 'icon-tags'),
+#         ('/es/rss.xml', 'RSS', 'icon-rss'),
+#         ('/es/portfolio/portfolio.slides.html', 'Portafolio', 'icon-briefcase'),
+#         ('/es/stories/about-me.html', 'Sobre mi...', 'icon-user'),
+#         ('https://twitter.com/damian_avila', 'Mi Twitter', 'icon-twitter'),
+#         ('https://github.com/damianavila', 'Mi Github', 'icon-github'),
+#         ('https://plus.google.com/u/0/106896109587369688379/posts', 'Mi Google+', 'icon-google-plus'),
+#     ),
+# }
 
 # Name of the theme to use.
-THEME = "zen-ipython"
+THEME = "ipython"
 
 # Below this point, everything is optional
 
