@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>My Nikola Site</title><link>http://thduynguyen.github.io/</link><description>This is a demo site for Nikola.</description><atom:link rel="self" href="http://thduynguyen.github.io/rss.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 21 Sep 2015 03:41:57 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Test ipynb</title><link>http://thduynguyen.github.io/posts/test-ipynb/</link><dc:creator>Nikola Tesla</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>My Nikola Site</title><link>http://thduynguyen.github.io/</link><description>This is a demo site for Nikola.</description><atom:link href="http://thduynguyen.github.io/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Mon, 21 Sep 2015 03:47:35 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Test ipynb</title><link>http://thduynguyen.github.io/posts/test-ipynb/</link><dc:creator>Duy-Nguyen Ta</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
     &lt;div class="container" id="notebook-container"&gt;
 
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;
@@ -95,7 +95,10 @@
 &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-</description><guid>http://thduynguyen.github.io/posts/test-ipynb/</guid><pubDate>Mon, 21 Sep 2015 01:16:21 GMT</pubDate></item><item><title>Welcome to Nikola</title><link>http://thduynguyen.github.io/posts/welcome-to-nikola/</link><dc:creator>Roberto Alsina</dc:creator><description>&lt;div&gt;&lt;div class="figure"&gt;
+</description><guid>http://thduynguyen.github.io/posts/test-ipynb/</guid><pubDate>Mon, 21 Sep 2015 01:16:21 GMT</pubDate></item><item><title>Test Markdown</title><link>http://thduynguyen.github.io/posts/test-markdown/</link><dc:creator>Duy-Nguyen Ta</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;strong&gt;Write&lt;/strong&gt; your &lt;em&gt;post&lt;/em&gt; here.&lt;/p&gt;
+&lt;h2&gt;Heading 1&lt;/h2&gt;
+&lt;h3&gt;Heading 2&lt;/h3&gt;
+&lt;hr&gt;&lt;/div&gt;</description><guid>http://thduynguyen.github.io/posts/test-markdown/</guid><pubDate>Mon, 21 Sep 2015 01:09:33 GMT</pubDate></item><item><title>Welcome to Nikola</title><link>http://thduynguyen.github.io/posts/welcome-to-nikola/</link><dc:creator>Roberto Alsina</dc:creator><description>&lt;div&gt;&lt;div class="figure"&gt;
 &lt;a class="reference external image-reference" href="http://farm1.staticflickr.com/138/352972944_4f9d568680_z.jpg?zz=1"&gt;&lt;img alt="Nikola Tesla Corner by nicwest, on Flickr" class="thumbnail" src="http://farm1.staticflickr.com/138/352972944_4f9d568680.jpg"&gt;&lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;If you can see this in a web browser, it means you managed to install Nikola,
