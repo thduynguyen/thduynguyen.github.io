@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<content collectionGUID="06D1E943-02B6-4F3B-9555-E9240BE9BD1D">
+  <lastEdited clientType="local-build-20140620" date="2014-06-20 16:50:44 +0000"/>
+  <textBox id="generic-header-attribute" dynamic="no" visible="yes">
+    <richText>&lt;b&gt;Projects&lt;/b&gt;</richText>
+  </textBox>
+  <textBox id="generic-title-attributes" dynamic="no" visible="yes">
+    <richText>Art of Defense</richText>
+  </textBox>
+  <textBox id="generic-body-attributes" dynamic="no" visible="yes">
+    <richText>Art of Defense explores novel game design and interaction techniques for mobile AR on commodity phone (Nokia N95). The design &lt;b&gt;leverages the phone&#x2019;s screen size limitations&lt;/b&gt; as part of the game challenge. Its &lt;b&gt;dynamic multi-marker building&lt;/b&gt; technique enables the game&#x2019;s mobility and portability, whereas the &lt;b&gt;sketch-based interaction&lt;/b&gt; enhances the tangibility and content relationship between the physical and virtual worlds. These techniques encourage both physical movement and tangible interaction with the game pieces -- the two key differentiators between AR and other phone-based games.&#xA0; Art of Defense also demonstrates a &lt;b&gt;new type of AR exploration game&lt;/b&gt;, where the players control which parts of the space they can explore. Our first version is shown at ISMAR&#x2019;08. &#xD;&#xD;Our second version is a 2-player collaborative game. We redesigned the game significantly to enforce collaboration between players. We replaced sketches with tokens to simplify the interactions and make it really tangible. The game was also fine-tuned carefully to become really interesting. Our user study reveals many interesting lessons about table-top AR collaborative games. For more details about the game, please see our paper below in Sandbox SIGGRAPH 2009.&#xD;&#xD;&#xD;Paper: &#xD;&#xD;D.N. Ta, K. Raveendran, Y. Xu, K. Spreen, and B. MacIntyre, &#x201C;Art of defense: a collaborative handheld augmented reality board game,&#x201D; Proceedings of the 2009 ACM SIGGRAPH Symposium on Video Games, 2009, pp. 135&#x2013;142. (&lt;a href="http://www.cc.gatech.edu/~dnth/Site/Publications_files/AoD-Sandbox-Final.pdf"&gt;pdf&lt;/a&gt;)&#xD;&#xD;&#xD;&lt;a href="http://www.youtube.com/watch?v=sR_plHtkZ-Q"&gt;Video version 1&lt;/a&gt;: single player game with sketches:&#xD;&#xD;&#xD;&#xD;&lt;a href="http://www.youtube.com/watch?v=hSUuvgklsZw"&gt;Video version 2&lt;/a&gt;: multiplayer collaborative AR game with tangible tokens:&#xD;&#xD;&#xD;&#xD;Update: An interesting &lt;a href="http://vimeo.com/1766417"&gt;video&lt;/a&gt; of our very first version on vimeo, captured by Dylski (?). I believe this was my demo in ISMAR&#x2019;08 at Cambridge, UK. </richText>
+  </textBox>
+  <textBox id="generic-datefield-attributes" dynamic="no" visible="yes">
+    <richText>&lt;b&gt;Thursday, March 12, 2009&lt;/b&gt;</richText>
+  </textBox>
+  <image id="generic-picture-attributes" dynamic="no" visible="yes" src="11_Art_of_Defense_files/shapeimage_3.png" left="0px" top="0px" width="228px" height="295px"/>
+</content>

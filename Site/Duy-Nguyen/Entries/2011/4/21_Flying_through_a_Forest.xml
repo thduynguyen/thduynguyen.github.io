@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<content collectionGUID="06D1E943-02B6-4F3B-9555-E9240BE9BD1D">
+  <lastEdited clientType="local-build-20140620" date="2014-06-20 16:50:47 +0000"/>
+  <textBox id="generic-header-attribute" dynamic="no" visible="yes">
+    <richText>&lt;b&gt;Projects&lt;/b&gt;</richText>
+  </textBox>
+  <textBox id="generic-title-attributes" dynamic="no" visible="yes">
+    <richText>Flying through a Forest</richText>
+  </textBox>
+  <textBox id="generic-body-attributes" dynamic="no" visible="yes">
+    <richText>In this project, we tried to enable enough perception for an ARDrone quadrotor to support its autonomous flight through a forest. The specific goal is to make it aware of local tree trunks to avoid them. This is a very difficult problem, and we later knew that there is another separate &lt;a href="http://www.onr.navy.mil/Media-Center/Press-Releases/2012/ONR-Funded-Research-Takes-Flight.aspx"&gt;MURI project&lt;/a&gt; fully dedicated to this problem, involving many famous researchers from top universities. &#xD;&#xD;The perception problem is very challenging due to the limited sensing and computational capabilities of the ARDrone, which only has a monocular frontal camera to observe trees. Furthermore, state-of-the-art computer vision methods have not been able to operate in these kinds of wild forested environments with lots of occlusions and ambiguity. &#xD;&#xD;We tried to realize Frank&#x2019;s vision for a bio-inspired two-system perception framework, which includes a peripheral system to pick out motion-salient objects, which are near by, and a foveal system to track them over time. The peripheral system is based on Richard Roberts&#x2019;s &lt;a href="http://borg.cc.gatech.edu/papers/roberts09cvpr"&gt;optical-flow subspace&lt;/a&gt; method. For the foveal system, we used a model-based edge tracking method.&#xD;&#xD;The video below shows our results. Please refer to our &lt;a href="http://frank.dellaert.com/pubs/Roberts12spie.pdf"&gt;SPIE paper&lt;/a&gt; for more details. We are able to detect and track trees robustly in a white sky background. However, we have not been able to handle occlusions and tree ambiguity reliably. Another crucial problem is the optical-flow-based peripheral system for motion saliency detection cannot detect objects in the moving direction due to the lack of motion parallax at the Focus of Expansion point.&#xD;&#xD;I was lucky enough to have a chance to work with &lt;a href="http://borg.cc.gatech.edu/people/gtg516a/"&gt;Richard&lt;/a&gt; and &lt;a href="http://people.csail.mit.edu/jstraub/"&gt;Julian Straub&lt;/a&gt; on this project. Richard is one of the most talented people and best programmers I have known in my life. I&#x2019;ve learned a lot from him through out the years. He is now with Google X. Julian is a very cool guy. He was an intern in our lab, and is now doing his PhD at MIT.&#xD;&#xD;&#xD;&#xD;</richText>
+  </textBox>
+  <textBox id="generic-datefield-attributes" dynamic="no" visible="yes">
+    <richText>&lt;b&gt;Thursday, April 21, 2011&lt;/b&gt;</richText>
+  </textBox>
+  <image id="generic-picture-attributes" dynamic="no" visible="yes" src="21_Flying_through_a_Forest_files/shapeimage_2.png" left="0px" top="0px" width="400px" height="300px"/>
+</content>

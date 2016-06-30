@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<content collectionGUID="06D1E943-02B6-4F3B-9555-E9240BE9BD1D">
+  <lastEdited clientType="local-build-20140721" date="2014-07-21 11:04:56 +0000"/>
+  <textBox id="generic-header-attribute" dynamic="no" visible="yes">
+    <richText>&lt;b&gt;Projects&lt;/b&gt;</richText>
+  </textBox>
+  <textBox id="generic-title-attributes" dynamic="no" visible="yes">
+    <richText>Linear-time SLAM with Incremental Tree Filtering</richText>
+  </textBox>
+  <textBox id="generic-body-attributes" dynamic="no" visible="yes">
+    <richText>For my thesis work, I explored object-centric based approaches for fast object estimation and robot localization. My exploration led to linear-time approximation algorithms for information filtering-based SLAM, which is traditionally cubic with respect to the number of features of the object. More details in my &lt;a href="Ta14iros_finalrev2-1.pdf"&gt;IROS paper&lt;/a&gt;.</richText>
+  </textBox>
+  <textBox id="generic-datefield-attributes" dynamic="no" visible="yes">
+    <richText>&lt;b&gt;Thursday, February 6, 2014&lt;/b&gt;</richText>
+  </textBox>
+  <image id="generic-picture-attributes" dynamic="no" visible="yes" src="6_Linear-time_SLAM_with_Incremental_Tree_Filtering_files/shapeimage_2.png" left="0px" top="0px" width="400px" height="300px"/>
+</content>

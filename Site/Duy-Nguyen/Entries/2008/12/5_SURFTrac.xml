@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<content collectionGUID="06D1E943-02B6-4F3B-9555-E9240BE9BD1D">
+  <lastEdited clientType="local-build-20140620" date="2014-06-20 16:50:44 +0000"/>
+  <textBox id="generic-header-attribute" dynamic="no" visible="yes">
+    <richText>&lt;b&gt;Projects&lt;/b&gt;</richText>
+  </textBox>
+  <textBox id="generic-title-attributes" dynamic="no" visible="yes">
+    <richText>SURFTrac</richText>
+  </textBox>
+  <textBox id="generic-body-attributes" dynamic="no" visible="yes">
+    <richText>This is the result of my 3-month internship at Nokia Research Center, Palo Alto. We present a light-weight tracking method for outdoor augmented reality using pure computer vision technique with a database of geotagged and labeled images. &#xD;&#xD;After extracting and matching SURF features of the first video frame with the database, our method reliably tracks those features locally in the subsequent frames. This method is fast enough to be implemented on mobile devices. The technique is demonstrated in the context of augmenting a video stream with labels of buildings visible in the video.&#xD;&#xD;This project was demonstrated on N95 in ISMAR&#x2019;08 and CVPR&#x2019;09. Also, see an application of SURFTrac for 3D tracking and camera pose estimation &lt;a href="perma://BLPageReference/F9F95A78-3EF8-49F9-B8FD-46225A171FA6"&gt;here&lt;/a&gt;.&#xD;&#xD;&#xD;Paper:&#xD;&#xD;D.N. Ta, W.C. Chen, N. Gelfand, and K. Pulli, &#x201C;&lt;b&gt;SURFTrac:&lt;/b&gt; &lt;b&gt;Efficient tracking and continuous object recognition using local feature descriptors&lt;/b&gt;,&#x201D; Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2009. (&lt;a href="http://www.cc.gatech.edu/~dnth/Site/Publications_files/nguyen_cvpr09.pdf"&gt;pdf&lt;/a&gt;) &#xD;&#xD;&#xD;&lt;a href="http://www.youtube.com/watch?v=wRJTikAjRUo"&gt;Video&lt;/a&gt;:&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;&#xD;</richText>
+  </textBox>
+  <textBox id="generic-datefield-attributes" dynamic="no" visible="yes">
+    <richText>&lt;b&gt;Saturday, December 6, 2008&lt;/b&gt;</richText>
+  </textBox>
+  <image id="generic-picture-attributes" dynamic="no" visible="yes" src="5_SURFTrac_files/shapeimage_2.png" left="0px" top="0px" width="435px" height="199px"/>
+</content>

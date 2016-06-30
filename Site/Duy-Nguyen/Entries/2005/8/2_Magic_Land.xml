@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<content collectionGUID="06D1E943-02B6-4F3B-9555-E9240BE9BD1D">
+  <lastEdited clientType="local-build-20140620" date="2014-06-20 16:50:42 +0000"/>
+  <textBox id="generic-header-attribute" dynamic="no" visible="yes">
+    <richText>&lt;b&gt;My Blog&lt;/b&gt;</richText>
+  </textBox>
+  <textBox id="generic-title-attributes" dynamic="no" visible="yes">
+    <richText>Magic Land</richText>
+  </textBox>
+  <textBox id="generic-body-attributes" dynamic="no" visible="yes">
+    <richText>&lt;a href="http://mixedrealitylab.org/projects/all-projects/magic-land/"&gt;Link&lt;/a&gt; to the project page at NUS. &#xD;This is the main topic of my Master thesis. Using 3D-Live system, we capture and compute the silhouette of the players, using 12 Dragonfly cameras put around inside a green room. We then render the 3D models in AR using a modified AR fast version of shape-from-silhouette algorithm to make an interactive table top AR game. Players can see themselves in AR interacting with virtual characters.&#xD;&#xD;The system was demonstrated at various conferences and exhibitions: Planet Games exhibition at Singapore&#xA0; Science Center 9/2004-12/2004, SIGCHI&#x2019;05, WIRED NextFest at Chicago 06/2005.&#xD;&#xD;Enjoy the video!&#xD;&#xD;&#xD;&#xD;&#xD;</richText>
+  </textBox>
+  <textBox id="generic-datefield-attributes" dynamic="no" visible="yes">
+    <richText>&lt;b&gt;Tuesday, August 2, 2005&lt;/b&gt;</richText>
+  </textBox>
+  <image id="generic-picture-attributes" dynamic="no" visible="yes" src="2_Magic_Land_files/shapeimage_2.png" left="0px" top="0px" width="500px" height="184px"/>
+</content>
