@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<content collectionGUID="06D1E943-02B6-4F3B-9555-E9240BE9BD1D">
+  <lastEdited clientType="local-build-20140620" date="2014-06-20 16:50:47 +0000"/>
+  <textBox id="generic-header-attribute" dynamic="no" visible="yes">
+    <richText>&lt;b&gt;Projects&lt;/b&gt;</richText>
+  </textBox>
+  <textBox id="generic-title-attributes" dynamic="no" visible="yes">
+    <richText>MonoSLAM with Vertical Edges</richText>
+  </textBox>
+  <textBox id="generic-body-attributes" dynamic="no" visible="yes">
+    <richText>I considered feature-based monocular SLAM more or less solved due to lots of great results like Andrew Davison&#x2019;s &lt;a href="http://www.doc.ic.ac.uk/~ajd/"&gt;MonoSLAM&lt;/a&gt; and Georg Klein&#x2019;s &lt;a href="http://www.robots.ox.ac.uk/~gk/PTAM/"&gt;PTAM&lt;/a&gt; systems. So I challenged myself to push forward monoSLAM in other common but challenging environments like the hallway above with a little number of corner-type features.&#xD;&#xD;My first attempt is to do SLAM with vertical edges which are one of the most salient features in these types of environments. I used EM for data association, and used inverse depth parameterization to ease the initialization problem. The results are shown in the following video.&#xD;&#xD;&#xD;&#xD;There are two major problems I have encountered in this work. First, the prior for the inverse depth parameterization is very hard to tune. It is not a normal Gaussian distribution, since the inverse depth needs to be larger than zero. I used a Gamma distribution as its prior and a small change in its parameters might affect the results significantly. Maybe some learning might help to alleviate the problem. Second, my final goal is to enable perception for autonomous navigation, but sparse vertical edges do not give me enough information to infer wall structures to avoid them. So I switched to play with &lt;a href="perma://BLPageReference/2AF608B8-A5A1-458C-AEC3-60C574853B76"&gt;other types of features&lt;/a&gt;.&#xD;</richText>
+  </textBox>
+  <textBox id="generic-datefield-attributes" dynamic="no" visible="yes">
+    <richText>&lt;b&gt;Thursday, November 10, 2011&lt;/b&gt;</richText>
+  </textBox>
+  <image id="generic-picture-attributes" dynamic="no" visible="yes" src="10_MonoSLAM_in_feature-poor_environments_files/shapeimage_2.png" left="0px" top="0px" width="400px" height="300px"/>
+</content>

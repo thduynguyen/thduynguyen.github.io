@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<content collectionGUID="06D1E943-02B6-4F3B-9555-E9240BE9BD1D">
+  <lastEdited clientType="local-build-20140620" date="2014-06-20 16:50:45 +0000"/>
+  <textBox id="generic-header-attribute" dynamic="no" visible="yes">
+    <richText>&lt;b&gt;Projects&lt;/b&gt;</richText>
+  </textBox>
+  <textBox id="generic-title-attributes" dynamic="no" visible="yes">
+    <richText>SURFTrac3D</richText>
+  </textBox>
+  <textBox id="generic-body-attributes" dynamic="no" visible="yes">
+    <richText>This is the result of my second summer internship with Nokia at NRC Hollywood lab. I experimented applying &lt;a href="perma://BLPageReference/24F11AB1-CDC8-4BA2-B4EC-1E79B75AB6D5"&gt;SURFTrac&lt;/a&gt; for 3D outdoor Augmented Reality. &#xD;&#xD;I first built a database of SURF features extracted  from a set of images and used &lt;a href="http://phototour.cs.washington.edu/bundler/"&gt;Bundler&lt;/a&gt; to construct their 3D coordinates. Then, in the first image captured from the video stream, I extracted SURF features and matched with those in the database. After that, I use traditional RANSAC with Homography model to reject wrong matches. The correct matches are then used to initialize the camera pose.&#xD;&#xD;SURFTrac is used to track SURF features in subsequent camera frames. New features in the frames are detected and matched with the database. From those matches, I compute 6 dof camera poses for each frame and augment all the 3D points for visualization. All the red dots in the video below are those 3D points in the database augmented onto the real scene. They are NOT 2D detected features. Please note how stable their projections are.&#xD;&#xD;I also render a panel of Nokia logo onto the building to show that it&#x2019;s a real 3D scene tracking. You might notice that the panel is not properly aligned. However, the main error doesn&#x2019;t come from wrong pose estimation, but rather from my bad modeling skill. The position of the plane panel in 3D virtual world is not properly setup. You can see how &#x201C;stable&#x201D; the misalignment is. :-)&#xD;&#xD;&lt;a href="http://www.youtube.com/watch?v=Z1CZ5DoAiSU"&gt;Video&lt;/a&gt;:&#xD;&#xD;</richText>
+  </textBox>
+  <textBox id="generic-datefield-attributes" dynamic="no" visible="yes">
+    <richText>&lt;b&gt;Saturday, August 15, 2009&lt;/b&gt;</richText>
+  </textBox>
+  <image id="generic-picture-attributes" dynamic="no" visible="yes" src="15_SURFTrac3D_files/shapeimage_2.png" left="0px" top="0px" width="400px" height="300px"/>
+</content>

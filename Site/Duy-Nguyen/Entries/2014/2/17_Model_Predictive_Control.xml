@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<content collectionGUID="06D1E943-02B6-4F3B-9555-E9240BE9BD1D">
+  <lastEdited clientType="local-build-20140721" date="2014-07-21 11:04:56 +0000"/>
+  <textBox id="generic-header-attribute" dynamic="no" visible="yes">
+    <richText>&lt;b&gt;Projects&lt;/b&gt;</richText>
+  </textBox>
+  <textBox id="generic-title-attributes" dynamic="no" visible="yes">
+    <richText>Model Predictive Control</richText>
+  </textBox>
+  <textBox id="generic-body-attributes" dynamic="no" visible="yes">
+    <richText>I have been interested in optimal control during the past two years. Together with Prof. &lt;a href="http://folio.jhu.edu/faculty/Marin_Kobilarov"&gt;Marin Kobilarov&lt;/a&gt; at JHU, and my advisor, Prof. &lt;a href="http://www.cc.gatech.edu/~dellaert"&gt;Frank Dellaert&lt;/a&gt;, I have a paper at &lt;a href="http://www.uasconferences.com"&gt;ICUAS&lt;/a&gt; on using factor graphs as a unified framework for both estimation and control problems. We derived constrained factors to discretize the system&#x2019;s dynamics/kinematics by doing integration on Lie-group manifolds. We also derived SQP on factor graphs and discovered an interesting connection between the primal and dual factor graphs. More details in our &lt;a href="Ta14icuas_final.pdf"&gt;ICUAS paper&lt;/a&gt;.</richText>
+  </textBox>
+  <textBox id="generic-datefield-attributes" dynamic="no" visible="yes">
+    <richText>&lt;b&gt;Monday, February 17, 2014&lt;/b&gt;</richText>
+  </textBox>
+  <image id="generic-picture-attributes" dynamic="no" visible="yes" src="17_Model_Predictive_Control_files/shapeimage_2.png" left="0px" top="0px" width="400px" height="300px"/>
+</content>

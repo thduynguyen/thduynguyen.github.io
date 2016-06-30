@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<content collectionGUID="06D1E943-02B6-4F3B-9555-E9240BE9BD1D">
+  <lastEdited clientType="local-build-20140620" date="2014-06-20 16:50:43 +0000"/>
+  <textBox id="generic-header-attribute" dynamic="no" visible="yes">
+    <richText>&lt;b&gt;Projects&lt;/b&gt;</richText>
+  </textBox>
+  <textBox id="generic-title-attributes" dynamic="no" visible="yes">
+    <richText>Periphery</richText>
+  </textBox>
+  <textBox id="generic-body-attributes" dynamic="no" visible="yes">
+    <richText>&lt;a href="http://www3.ntu.edu.sg/ierc/periphery.html"&gt;Link&lt;/a&gt; to the project page at NTU. &#xD;We used 2 infrared cameras to track positions of the visitors and their hands. When users come closer to the board, the image will change gradually from the current modern scene, captured live by the camera behind the board, to the whole forest. When their hands point at the board, another layer of the same scene in the past, drawn by an artist, is partially revealed, following their pointing direction.&#xD;&#xD;The project was exhibited at The Second International Art and Science Exhibition, Beijing China in November 2006 at Tsinghua University.</richText>
+  </textBox>
+  <textBox id="generic-datefield-attributes" dynamic="no" visible="yes">
+    <richText>&lt;b&gt;Saturday, November 11, 2006&lt;/b&gt;</richText>
+  </textBox>
+  <image id="generic-picture-attributes" dynamic="no" visible="yes" src="11_Periphery_files/shapeimage_2.png" left="0px" top="0px" width="400px" height="300px"/>
+</content>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<content collectionGUID="06D1E943-02B6-4F3B-9555-E9240BE9BD1D">
+  <lastEdited clientType="local-build-20140620" date="2014-06-20 16:50:48 +0000"/>
+  <textBox id="generic-header-attribute" dynamic="no" visible="yes">
+    <richText>&lt;b&gt;Projects&lt;/b&gt;</richText>
+  </textBox>
+  <textBox id="generic-title-attributes" dynamic="no" visible="yes">
+    <richText>Vistas for Rotation Aiding and Autonomous Straight Flight</richText>
+  </textBox>
+  <textBox id="generic-body-attributes" dynamic="no" visible="yes">
+    <richText>&lt;a href="http://borg.cc.gatech.edu/people/cbeall3"&gt;Chris&lt;/a&gt; and I, together with &lt;a href="http://www.korobotics.com/"&gt;Kyel&lt;/a&gt;, have realized Frank&#x2019;s idea to use Vistas, our name for far-away features, for aiding rotation estimation on the drone. &#xD;As &lt;a href="https://dl.dropboxusercontent.com/u/2073820/site/Site/Media/vista_noise2.mov"&gt;shown below&lt;/a&gt;, Vistas are detected from tracking SURF features and observe their scale changes. See our &lt;a href="http://borg.cc.gatech.edu/papers/beall12fusion"&gt;Fusion paper&lt;/a&gt; here for more details. (Also, see my &lt;a href="perma://BLPageReference/24F11AB1-CDC8-4BA2-B4EC-1E79B75AB6D5"&gt;related work&lt;/a&gt; at CVPR 2009)&#xD;&#xD;&#xD;&#xD;&#xD;Since they are far-away, we also used Vistas as directions for autonomous flight and exploration. The following &lt;a href="https://dl.dropboxusercontent.com/u/2073820/site/Site/Media/AutoFlight1.m4v"&gt;video&lt;/a&gt; shows our first autonomous flight with vistas. It successfully passed through the narrow door at the end of the hallway!&#xD;&#xD;&#xD;&#xD;&#xD;And &lt;a href="https://dl.dropboxusercontent.com/u/2073820/site/Site/Media/AutoFlight2.m4v"&gt;this&lt;/a&gt; is our full autonomous flight towards vistas with human-assisted turns at the hallway corners. &#xD;&#xD;&#xD;&#xD;You can see the drone collides to the walls. We later tried to avoid lateral collisions with &lt;a href="perma://BLPageReference/86D706F7-EE66-4673-8D24-51C912E59022"&gt;Wall-Floor Features&lt;/a&gt;. More details can be found in our &lt;a href="http://borg.cc.gatech.edu/papers/ok12vicomor"&gt;workshop paper&lt;/a&gt;.&#xD;&#xD;&lt;b&gt;Update 2014-04:&lt;/b&gt; Scherer&#x2019;s group at CMU recently used a very &lt;a href="http://www.ri.cmu.edu/publication_view.html?pub_id=7452"&gt;similar&lt;/a&gt; &lt;a href="https://www.youtube.com/watch?v=9QQCGLKuUxc"&gt;idea&lt;/a&gt; to enable obstacle avoidance on an ARDrone.</richText>
+  </textBox>
+  <textBox id="generic-datefield-attributes" dynamic="no" visible="yes">
+    <richText>&lt;b&gt;Tuesday, November 22, 2011&lt;/b&gt;</richText>
+  </textBox>
+  <image id="generic-picture-attributes" dynamic="no" visible="yes" src="22_Vistas_for_Rotation_Aiding_and_Autonomous_Flight_files/shapeimage_2.png" left="0px" top="0px" width="400px" height="300px"/>
+</content>
