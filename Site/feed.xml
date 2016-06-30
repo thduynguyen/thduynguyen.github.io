@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <id>urn:iweb:9E8B5B41-297C-4C5B-A630-FB3312CE1E71</id>
+ <title>Page list Atom feed</title>
+ <updated>2014-07-21T14:17:56-04:00</updated>
+ <link rel="self" href="feed.xml"/>
+ <generator>iWeb</generator>
+ <author>
+  <name>iWeb</name>
+ </author>
+ <entry>
+  <id>urn:iweb:567BD51C-F974-4BDE-8E12-A3F3C65D0DEB</id>
+  <title>Duy-Nguyen</title>
+  <title xmlns="urn:iweb:">Duy-Nguyen</title>
+  <in-navbar xmlns="urn:iweb:">567BD51C-F974-4BDE-8E12-A3F3C65D0DEB</in-navbar>
+  <link rel="alternate" href="Duy-Nguyen/Duy-Nguyen.html"/>
+  <updated>2007-01-23T12:29:52-05:00</updated>
+  <content>Duy-Nguyen</content>
+ </entry>
+ <entry>
+  <id>urn:iweb:34821FE5-62DA-43CD-898F-BEDFF7778AB3</id>
+  <title>CV</title>
+  <title xmlns="urn:iweb:">CV</title>
+  <in-navbar xmlns="urn:iweb:">34821FE5-62DA-43CD-898F-BEDFF7778AB3</in-navbar>
+  <link rel="alternate" href="CV.html"/>
+  <updated>2014-07-21T14:17:56.001-04:00</updated>
+  <content>CV</content>
+ </entry>
+ <entry>
+  <id>urn:iweb:59E4AAB9-C7BF-4D1F-9980-830E812EEEFD</id>
+  <title>Publications</title>
+  <title xmlns="urn:iweb:">Publications</title>
+  <in-navbar xmlns="urn:iweb:">59E4AAB9-C7BF-4D1F-9980-830E812EEEFD</in-navbar>
+  <link rel="alternate" href="Publications.html"/>
+  <updated>2014-07-21T14:17:56.002-04:00</updated>
+  <content>Publications</content>
+ </entry>
+ <entry>
+  <id>urn:iweb:B583A3B7-CE3A-4443-84E1-15B73802CD05</id>
+  <title>Misc.</title>
+  <title xmlns="urn:iweb:">Misc.</title>
+  <in-navbar xmlns="urn:iweb:">B583A3B7-CE3A-4443-84E1-15B73802CD05</in-navbar>
+  <link rel="alternate" href="Misc..html"/>
+  <updated>2014-07-21T14:17:56.003-04:00</updated>
+  <content>Misc.</content>
+ </entry>
+</feed>

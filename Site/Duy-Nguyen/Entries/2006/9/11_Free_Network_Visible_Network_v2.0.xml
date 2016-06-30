@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<content collectionGUID="06D1E943-02B6-4F3B-9555-E9240BE9BD1D">
+  <lastEdited clientType="local-build-20140620" date="2014-06-20 16:50:43 +0000"/>
+  <textBox id="generic-header-attribute" dynamic="no" visible="yes">
+    <richText>&lt;b&gt;Projects&lt;/b&gt;</richText>
+  </textBox>
+  <textBox id="generic-title-attributes" dynamic="no" visible="yes">
+    <richText>Free Network Visible Network v2.0</richText>
+  </textBox>
+  <textBox id="generic-body-attributes" dynamic="no" visible="yes">
+    <richText>&lt;a href="http://www.lalalab.org/redvisible/index_en.htm"&gt;Link&lt;/a&gt; to the project page. &#xD;The idea came from a great artist couple: Dr. Diego Diaz and Dr. Clara Boj. I was the developer for the second version. &#xD;We use markers to represent the network wireless access points. The network data packages traveling in the air are visualized by transparent boxes and donuts flying between those markers in AR. The project was demonstrated in ISEA06 Zero One at San Jose in 2006.</richText>
+  </textBox>
+  <textBox id="generic-datefield-attributes" dynamic="no" visible="yes">
+    <richText>&lt;b&gt;Monday, September 11, 2006&lt;/b&gt;</richText>
+  </textBox>
+  <image id="generic-picture-attributes" dynamic="no" visible="yes" src="11_Free_Network_Visible_Network_v2.0_files/shapeimage_2.png" left="0px" top="0px" width="400px" height="300px"/>
+</content>

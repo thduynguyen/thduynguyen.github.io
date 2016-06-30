@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<rss xmlns:iweb="http://www.apple.com/iweb" version="2.0">
+  <channel>
+    <title>Duy-Nguyen</title>
+    <link>http://www.cc.gatech.edu/~dnth/Site/Duy-Nguyen</link>
+    <description>I am a PhD student at IRIM, Georgia Tech, working with Prof. Frank Dellaert on perception and optimal control problems for autonomous navigation on quadrotors.
+Before falling in love with robotics, I have been playing with monocular tracking for AR on mobile phones in Prof. Blair MacIntyre&#x2019;s lab and Nokia Research Centers. I received an M.Eng. degree from NUS for some work in AR.
+Please see here for the full list of my work.
+
+
+If you find my Vietnamese name is hard to pronounce, here is a hint: Duy-Nguyen.</description>
+    <item>
+      <title>Model Predictive Control</title>
+      <link>http://www.cc.gatech.edu/%7Ednth/Site/Duy-Nguyen/Entries/2014/2/17_Model_Predictive_Control.html</link>
+      <guid isPermaLink="false">f86b1972-7e4c-4182-a736-3fd1c4dd7b5d</guid>
+      <pubDate>Mon, 17 Feb 2014 00:48:32 -0500</pubDate>
+      <iweb:comment enabled="0" count="0" link="http://www.cc.gatech.edu/%7Ednth/Site/Duy-Nguyen/Entries/2014/2/17_Model_Predictive_Control.html#comment_layer"></iweb:comment>
+    </item>
+    <item>
+      <title>Linear-time SLAM with Incremental Tree Filtering</title>
+      <link>http://www.cc.gatech.edu/%7Ednth/Site/Duy-Nguyen/Entries/2014/2/6_Linear-time_SLAM_with_Incremental_Tree_Filtering.html</link>
+      <guid isPermaLink="false">5b81bb2b-5d8c-46ed-887d-7f108fd94d7a</guid>
+      <pubDate>Thu, 6 Feb 2014 00:06:48 -0500</pubDate>
+      <iweb:comment enabled="0" count="0" link="http://www.cc.gatech.edu/%7Ednth/Site/Duy-Nguyen/Entries/2014/2/6_Linear-time_SLAM_with_Incremental_Tree_Filtering.html#comment_layer"></iweb:comment>
+    </item>
+    <item>
+      <title>Monocular Parallel Tracking and Mapping with Odometry Fusion</title>
+      <link>http://www.cc.gatech.edu/%7Ednth/Site/Duy-Nguyen/Entries/2013/10/8_Parallel_Tracking_and_Mapping_for_Fusing_Monocular_with_Odometry.html</link>
+      <guid isPermaLink="false">190f4035-e05b-4a66-ba67-d862b034fc2f</guid>
+      <pubDate>Tue, 8 Oct 2013 06:08:46 -0400</pubDate>
+      <iweb:comment enabled="0" count="0" link="http://www.cc.gatech.edu/%7Ednth/Site/Duy-Nguyen/Entries/2013/10/8_Parallel_Tracking_and_Mapping_for_Fusing_Monocular_with_Odometry.html#comment_layer"></iweb:comment>
+    </item>
+    <item>
+      <title>Wall-Floor Features for Lateral Collision Avoidance</title>
+      <link>http://www.cc.gatech.edu/%7Ednth/Site/Duy-Nguyen/Entries/2012/3/30_Entry_1.html</link>
+      <guid isPermaLink="false">86d706f7-ee66-4673-8d24-51c912e59022</guid>
+      <pubDate>Fri, 30 Mar 2012 05:33:51 -0400</pubDate>
+      <iweb:comment enabled="0" count="0" link="http://www.cc.gatech.edu/%7Ednth/Site/Duy-Nguyen/Entries/2012/3/30_Entry_1.html#comment_layer"></iweb:comment>
+    </item>
+    <item>
+      <title>Vistas for Rotation Aiding and Autonomous Straight Flight</title>
+      <link>http://www.cc.gatech.edu/%7Ednth/Site/Duy-Nguyen/Entries/2011/11/22_Vistas_for_Rotation_Aiding_and_Autonomous_Flight.html</link>
+      <guid isPermaLink="false">2af608b8-a5a1-458c-aec3-60c574853b76</guid>
+      <pubDate>Tue, 22 Nov 2011 00:42:15 -0500</pubDate>
+      <iweb:comment enabled="0" count="0" link="http://www.cc.gatech.edu/%7Ednth/Site/Duy-Nguyen/Entries/2011/11/22_Vistas_for_Rotation_Aiding_and_Autonomous_Flight.html#comment_layer"></iweb:comment>
+    </item>
+    <item>
+      <title>MonoSLAM with Vertical Edges</title>
+      <link>http://www.cc.gatech.edu/%7Ednth/Site/Duy-Nguyen/Entries/2011/11/10_MonoSLAM_in_feature-poor_environments.html</link>
+      <guid isPermaLink="false">dd3c807d-7149-41d3-9cad-54c153dfc7b3</guid>
+      <pubDate>Thu, 10 Nov 2011 00:29:08 -0500</pubDate>
+      <iweb:comment enabled="0" count="0" link="http://www.cc.gatech.edu/%7Ednth/Site/Duy-Nguyen/Entries/2011/11/10_MonoSLAM_in_feature-poor_environments.html#comment_layer"></iweb:comment>
+    </item>
+    <item>
+      <title>Flying through a Forest</title>
+      <link>http://www.cc.gatech.edu/%7Ednth/Site/Duy-Nguyen/Entries/2011/4/21_Flying_through_a_Forest.html</link>
+      <guid isPermaLink="false">5b68acc8-694d-4e60-bc2f-ce6d4b74839b</guid>
+      <pubDate>Thu, 21 Apr 2011 00:14:47 -0400</pubDate>
+      <iweb:comment enabled="0" count="0" link="http://www.cc.gatech.edu/%7Ednth/Site/Duy-Nguyen/Entries/2011/4/21_Flying_through_a_Forest.html#comment_layer"></iweb:comment>
+    </item>
+    <item>
+      <title>Template-based AR Tracking</title>
+      <link>http://www.cc.gatech.edu/%7Ednth/Site/Duy-Nguyen/Entries/2009/8/20_Template-based_Tracking_for_AR.html</link>
+      <guid isPermaLink="false">927e4716-4b12-447e-b1d5-9f1d29b11396</guid>
+      <pubDate>Thu, 20 Aug 2009 23:15:46 -0400</pubDate>
+      <iweb:comment enabled="0" count="0" link="http://www.cc.gatech.edu/%7Ednth/Site/Duy-Nguyen/Entries/2009/8/20_Template-based_Tracking_for_AR.html#comment_layer"></iweb:comment>
+    </item>
+    <item>
+      <title>SURFTrac3D</title>
+      <link>http://www.cc.gatech.edu/%7Ednth/Site/Duy-Nguyen/Entries/2009/8/15_SURFTrac3D.html</link>
+      <guid isPermaLink="false">f9f95a78-3ef8-49f9-b8fd-46225a171fa6</guid>
+      <pubDate>Sat, 15 Aug 2009 15:07:58 -0400</pubDate>
+      <iweb:comment enabled="0" count="0" link="http://www.cc.gatech.edu/%7Ednth/Site/Duy-Nguyen/Entries/2009/8/15_SURFTrac3D.html#comment_layer"></iweb:comment>
+    </item>
+    <item>
+      <title>Art of Defense</title>
+      <link>http://www.cc.gatech.edu/%7Ednth/Site/Duy-Nguyen/Entries/2009/3/11_Art_of_Defense.html</link>
+      <guid isPermaLink="false">b4ac06aa-384c-4614-8adf-418da594b404</guid>
+      <pubDate>Thu, 12 Mar 2009 01:01:31 -0400</pubDate>
+      <iweb:comment enabled="0" count="0" link="http://www.cc.gatech.edu/%7Ednth/Site/Duy-Nguyen/Entries/2009/3/11_Art_of_Defense.html#comment_layer"></iweb:comment>
+    </item>
+    <item>
+      <title>SURFTrac</title>
+      <link>http://www.cc.gatech.edu/%7Ednth/Site/Duy-Nguyen/Entries/2008/12/5_SURFTrac.html</link>
+      <guid isPermaLink="false">24f11ab1-cdc8-4ba2-b4ec-1e79b75ab6d5</guid>
+      <pubDate>Sat, 6 Dec 2008 00:50:55 -0500</pubDate>
+      <iweb:comment enabled="0" count="0" link="http://www.cc.gatech.edu/%7Ednth/Site/Duy-Nguyen/Entries/2008/12/5_SURFTrac.html#comment_layer"></iweb:comment>
+    </item>
+    <item>
+      <title>Lego Edge Tracking</title>
+      <link>http://www.cc.gatech.edu/%7Ednth/Site/Duy-Nguyen/Entries/2008/5/6_Lego_Edge_Tracking.html</link>
+      <guid isPermaLink="false">75cc4187-8136-4993-ae59-623d7c664892</guid>
+      <pubDate>Tue, 6 May 2008 15:08:17 -0400</pubDate>
+      <iweb:comment enabled="0" count="0" link="http://www.cc.gatech.edu/%7Ednth/Site/Duy-Nguyen/Entries/2008/5/6_Lego_Edge_Tracking.html#comment_layer"></iweb:comment>
+    </item>
+    <item>
+      <title>Ultimate Commodity</title>
+      <link>http://www.cc.gatech.edu/%7Ednth/Site/Duy-Nguyen/Entries/2007/7/15_Ultimate_Commodity.html</link>
+      <guid isPermaLink="false">8ac2694c-70c0-45a1-b347-43a2f51f711b</guid>
+      <pubDate>Sun, 15 Jul 2007 22:03:40 -0400</pubDate>
+      <iweb:comment enabled="0" count="0" link="http://www.cc.gatech.edu/%7Ednth/Site/Duy-Nguyen/Entries/2007/7/15_Ultimate_Commodity.html#comment_layer"></iweb:comment>
+    </item>
+    <item>
+      <title>Fragile!</title>
+      <link>http://www.cc.gatech.edu/%7Ednth/Site/Duy-Nguyen/Entries/2006/12/6_Fragile%21.html</link>
+      <guid isPermaLink="false">4228ea4d-36fa-41ee-bf3f-12efc29e461d</guid>
+      <pubDate>Wed, 6 Dec 2006 15:21:43 -0500</pubDate>
+      <iweb:comment enabled="0" count="0" link="http://www.cc.gatech.edu/%7Ednth/Site/Duy-Nguyen/Entries/2006/12/6_Fragile%21.html#comment_layer"></iweb:comment>
+    </item>
+    <item>
+      <title>Periphery</title>
+      <link>http://www.cc.gatech.edu/%7Ednth/Site/Duy-Nguyen/Entries/2006/11/11_Periphery.html</link>
+      <guid isPermaLink="false">3f27fbc9-27cb-4a67-bfa5-882a4d6a31ea</guid>
+      <pubDate>Sat, 11 Nov 2006 21:59:37 -0500</pubDate>
+      <iweb:comment enabled="0" count="0" link="http://www.cc.gatech.edu/%7Ednth/Site/Duy-Nguyen/Entries/2006/11/11_Periphery.html#comment_layer"></iweb:comment>
+    </item>
+    <item>
+      <title>Other projects that I was partially involved in</title>
+      <link>http://www.cc.gatech.edu/%7Ednth/Site/Duy-Nguyen/Entries/2006/10/11_Other_projects_that_I_was_partially_involved_in.html</link>
+      <guid isPermaLink="false">edec6d15-ad2e-4492-a704-6deefd1b0742</guid>
+      <pubDate>Wed, 11 Oct 2006 21:47:31 -0400</pubDate>
+      <iweb:comment enabled="0" count="0" link="http://www.cc.gatech.edu/%7Ednth/Site/Duy-Nguyen/Entries/2006/10/11_Other_projects_that_I_was_partially_involved_in.html#comment_layer"></iweb:comment>
+    </item>
+    <item>
+      <title>Free Network Visible Network v2.0</title>
+      <link>http://www.cc.gatech.edu/%7Ednth/Site/Duy-Nguyen/Entries/2006/9/11_Free_Network_Visible_Network_v2.0.html</link>
+      <guid isPermaLink="false">75729e09-a34c-4bb8-910e-f9aa374857ff</guid>
+      <pubDate>Mon, 11 Sep 2006 21:42:38 -0400</pubDate>
+      <iweb:comment enabled="0" count="0" link="http://www.cc.gatech.edu/%7Ednth/Site/Duy-Nguyen/Entries/2006/9/11_Free_Network_Visible_Network_v2.0.html#comment_layer"></iweb:comment>
+    </item>
+    <item>
+      <title>Magic Land</title>
+      <link>http://www.cc.gatech.edu/%7Ednth/Site/Duy-Nguyen/Entries/2005/8/2_Magic_Land.html</link>
+      <guid isPermaLink="false">e338c4a3-37d3-40a7-a28f-38c6eb9f0340</guid>
+      <pubDate>Tue, 2 Aug 2005 20:43:08 -0400</pubDate>
+      <iweb:comment enabled="0" count="0" link="http://www.cc.gatech.edu/%7Ednth/Site/Duy-Nguyen/Entries/2005/8/2_Magic_Land.html#comment_layer"></iweb:comment>
+    </item>
+    <iweb:dateFormat>EEEE, MMMM d, y</iweb:dateFormat>
+    <iweb:baseURL>http://www.cc.gatech.edu/~dnth/Site/Duy-Nguyen</iweb:baseURL>
+    <iweb:maximumSummaryItems>12</iweb:maximumSummaryItems>
+  </channel>
+</rss>
