@@ -1,1 +1,438 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title></title><meta http-equiv="refresh" content="0;url= Site/Duy-Nguyen/Duy-Nguyen.html" /></head><body></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Duy-Nguyen Ta — Roboticist</title>
+<meta name="description" content="Duy-Nguyen Ta is a roboticist at the Robotics & AI Institute working on whole-body loco-manipulation, sampling-based MPC, robot learning, SLAM, and perception.">
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <span class="site-name">Duy-Nguyen Ta</span>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#news">News</a>
+      <a href="#projects">Projects</a>
+      <a href="#past">Earlier Work</a>
+      <a href="#publications">Publications</a>
+      <a href="CV.pdf">CV</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+<section class="hero" id="about">
+  <h1>Duy-Nguyen Ta</h1>
+  <p class="tagline">Roboticist · Robotics &amp; AI Institute</p>
+  <p>
+    I am a roboticist at the <a href="https://rai-inst.com">Robotics &amp; AI Institute</a>
+    (RAI, formerly the Boston Dynamics AI Institute), where I work on whole-body
+    loco-manipulation for the Boston Dynamics Spot robot &mdash; combining sampling-based
+    model-predictive control, reinforcement learning, and policy learning, together with
+    the large-scale simulation, data, and deployment infrastructure that makes them work
+    on real hardware.
+  </p>
+  <p>
+    Before RAI, I spent five years at <a href="https://www.tri.global">Toyota Research
+    Institute</a> working on perception for dexterous manipulation, led perception at
+    Outrider, and built SLAM systems at iRobot that shipped on the Roomba&nbsp;980.
+    I received my Ph.D. from Georgia Tech, where I worked with
+    Prof.&nbsp;<a href="https://dellaert.github.io">Frank Dellaert</a> on factor-graph
+    methods that unify perception and optimal control for autonomous flight. In an
+    earlier life, I built augmented-reality systems at Nokia Research Center and
+    mixed-reality art installations in Singapore.
+  </p>
+  <p>
+    If my Vietnamese name looks hard to pronounce, it is roughly
+    <i>&ldquo;Zwee&rdquo;</i> (Duy) and <i>&ldquo;Nwin&rdquo;</i> (Nguyen) &mdash; and here is
+    <a href="https://www.youtube.com/watch?v=r3-xrBN5p14">how not to say it</a>.
+  </p>
+  <div class="links">
+    <a href="mailto:thduynguyen@gmail.com">Email</a>
+    <a href="https://github.com/thduynguyen">GitHub</a>
+    <a href="https://www.linkedin.com/in/duynguyen-ta/">LinkedIn</a>
+    <a href="CV.pdf">CV (PDF)</a>
+  </div>
+</section>
+
+<section id="news">
+  <h2>News</h2>
+  <ul class="news">
+    <li><time>Aug 2026</time><span>Our paper on learning loco-manipulation from SMPC demonstrations with sparse offline-to-online RL was accepted to <b>CoRL 2026</b>. <a href="https://arxiv.org/abs/2608.12063">[arXiv]</a></span></li>
+    <li><time>Jun 2026</time><span><b>Sumo</b> was presented at the RSS 2026 Workshop on Whole-Body Control and Manipulation. <a href="https://sumo.rai-inst.com/">[project]</a></span></li>
+    <li><time>Jan 2026</time><span><b>NovaFlow</b> was accepted to <b>ICRA 2026</b>. <a href="https://novaflow.lhy.xyz/">[project]</a></span></li>
+    <li><time>2025</time><span>We open-sourced <b>judo</b>, a user-friendly framework for sampling-based MPC. <a href="https://github.com/rai-opensource/judo">[code]</a></span></li>
+    <li><time>Apr 2025</time><span><b>ASHiTA</b>, automatic scene-grounded hierarchical task analysis, appeared at <b>CVPR 2025</b>. <a href="https://arxiv.org/abs/2504.06553">[arXiv]</a></span></li>
+    <li><time>Oct 2023</time><span>I joined the Robotics &amp; AI Institute (then the Boston Dynamics AI Institute).</span></li>
+  </ul>
+</section>
+
+<section id="projects">
+  <h2>Recent Projects</h2>
+  <p class="section-note">Whole-body loco-manipulation, robot learning, and the infrastructure behind them, at the Robotics &amp; AI Institute.</p>
+  <div class="cards">
+
+    <div class="card">
+      <a href="https://www.youtube.com/watch?v=nM_ZHzp8nQA"><img src="https://i.ytimg.com/vi/nM_ZHzp8nQA/hqdefault.jpg" alt="Spot uprighting a car tire with whole-body manipulation" loading="lazy"></a>
+      <div class="body">
+        <div class="venue">RSS 2026 WCBM Workshop</div>
+        <h3>Sumo: Dynamic Whole-Body Loco-Manipulation</h3>
+        <p>Test-time steering of a pre-trained whole-body RL policy with a sampling-based
+        planner lets Spot upright, roll, drag, and stack 15&nbsp;kg tires &mdash; and adapt to new
+        objects and tasks at deployment without retraining. I support this work with
+        GPU-parallel SMPC data generation (MuJoCo Warp), training infrastructure, and
+        on-robot deployment tooling.</p>
+        <div class="tags">
+          <a href="https://sumo.rai-inst.com/">Project</a>
+          <a href="https://arxiv.org/abs/2604.08508">arXiv</a>
+          <a href="https://github.com/rai-opensource/sumo">Code</a>
+          <a href="https://www.youtube.com/watch?v=nM_ZHzp8nQA">Video</a>
+          <a href="https://rai-inst.com/resources/blog/combining-sampling-and-learning-for-dynamic-whole-body-manipulation/">RAI Blog</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="body">
+        <div class="venue">CoRL 2026</div>
+        <h3>Loco-Manipulation from SMPC Demonstrations</h3>
+        <p>Sampling-based MPC acts as an automated expert generating massive offline
+        datasets in simulation; sparse offline-to-online RL then distills robust
+        loco-manipulation policies, deployed on an arm-equipped Spot and a Unitree G1
+        humanoid. Led by Martin Schuck (TUM/ETH) with our team at RAI.</p>
+        <div class="tags">
+          <a href="https://arxiv.org/abs/2608.12063">arXiv</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="body">
+        <div class="venue">Open Source</div>
+        <h3>judo: Sampling-Based MPC Made Easy</h3>
+        <p>A user-friendly Python framework for prototyping, benchmarking, and deploying
+        sampling-based MPC controllers: MuJoCo physics, asynchronous execution for
+        sim-to-hardware transfer, and an interactive tuning GUI. I co-maintain the
+        package and its MuJoCo Warp integration for massive GPU-parallel rollouts.</p>
+        <div class="tags">
+          <a href="https://github.com/rai-opensource/judo">Code</a>
+          <a href="https://rai-inst.com/resources/papers/judo-a-user-friendly-open-source-package-forsampling-based-model-predictive-control/">RAI Page</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="body">
+        <div class="venue">ICRA 2026</div>
+        <h3>NovaFlow: Zero-Shot Manipulation</h3>
+        <p>A video-generation model imagines the task; off-the-shelf perception distills
+        the generated video into 3D actionable object flow; the robot executes &mdash; no
+        demonstrations, no embodiment-specific training. Validated on a Franka arm and
+        Spot for rigid, articulated, and deformable objects.</p>
+        <div class="tags">
+          <a href="https://novaflow.lhy.xyz/">Project</a>
+          <a href="https://arxiv.org/abs/2510.08568">arXiv</a>
+          <a href="https://github.com/rai-opensource/NovaFlow">Code</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="body">
+        <div class="venue">CVPR 2025</div>
+        <h3>ASHiTA: Scene-Grounded Task Analysis</h3>
+        <p>The first framework to automatically decompose high-level tasks into detailed
+        subtasks grounded in a 3D scene graph &mdash; hierarchical task analysis directly from
+        a scene, connecting task planning with real-world spatial structure.</p>
+        <div class="tags">
+          <a href="https://arxiv.org/abs/2504.06553">arXiv</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="body">
+        <div class="venue">Preprint</div>
+        <h3>Zero-Shot Object-Centric Instruction Following</h3>
+        <p>Integrating foundation models with traditional SLAM-based navigation for
+        object-centric instruction following on real robots &mdash; language grounding without
+        task-specific training.</p>
+        <div class="tags">
+          <a href="https://arxiv.org/abs/2411.07848">arXiv</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="past">
+  <h2>Earlier Work</h2>
+
+  <h3>Autonomous Flight &mdash; Georgia Tech (2011&ndash;2014)</h3>
+  <p class="section-note">Perception and optimal control for autonomous navigation on micro aerial vehicles, with Prof. Frank Dellaert.</p>
+
+  <div class="past-entry">
+    <b>Factor graphs for estimation and model-predictive control.</b>
+    We extended factor graphs from estimation to deterministic optimal control:
+    dynamics constraints are discretized via integration on Lie-group manifolds and
+    imposed as constrained factors, solved with an SQP formulation that reveals an
+    elegant connection between primal and dual factor graphs (ICUAS 2014, with
+    Prof. Marin Kobilarov). A companion line of work derived differential dynamic
+    programming for optimal estimation (ICRA 2015).
+  </div>
+
+  <div class="past-entry">
+    <b>Linear-time SLAM with incremental tree filtering.</b>
+    My thesis work explored object-centric approaches to fast estimation, leading to
+    linear-time approximation algorithms for information-filtering SLAM &mdash; a problem
+    that is traditionally cubic in the number of features (IROS 2014).
+  </div>
+
+  <div class="past-entry">
+    <b>Vistas: far-away features for rotation aiding and autonomous flight.</b>
+    Distant features (&ldquo;vistas&rdquo;) barely translate in the image, making them ideal for
+    estimating rotation and for steering straight flight. Our ARDrone flew autonomously
+    down a hallway and through a narrow door using vistas alone (FUSION 2012).
+    <span class="meta">Videos:
+      <a href="Site/Media/AutoFlight1.m4v">first autonomous flight</a> &middot;
+      <a href="Site/Media/AutoFlight2.m4v">full flight with assisted turns</a> &middot;
+      <a href="Site/Media/vista_noise2.mov">vista detection</a></span>
+  </div>
+
+  <div class="past-entry">
+    <b>Wall-floor features for lateral collision avoidance.</b>
+    With Kyel Ok, I used intersections between vertical edges and wall-floor
+    boundary lines &mdash; detected with steerable filters &mdash; to infer wall structure that
+    sparse point features cannot provide, enabling the drone&rsquo;s first fully autonomous
+    turns indoors (IROS workshop 2012; RAS journal 2014).
+    <span class="meta">Videos:
+      <a href="Site/Media/steerableFilter_edge.mov">feature detection</a> &middot;
+      <a href="Site/Media/AutoTurn1.m4v">first autonomous turn</a></span>
+  </div>
+
+  <div class="past-entry">
+    <b>Monocular parallel tracking and mapping with odometry fusion.</b>
+    PTAM-style systems fail on forward-moving robots with a single frontal camera: too
+    few corner features, and too little motion parallax to triangulate a map. Fusing
+    odometry into a parallel tracking-and-mapping framework kept localization real-time
+    while a slower thread inferred wall structure (IROS workshop 2013; RAS 2014).
+    <span class="meta">Videos:
+      <a href="Site/Media/Duy-13-04-10-firstTurn-1.mov">first turn</a> &middot;
+      <a href="Site/Media/Duy-13-04-10-cleanTurn-1.mov">clean turn</a></span>
+  </div>
+
+  <div class="past-entry">
+    <b>MonoSLAM in feature-poor corridors.</b>
+    Corner-feature SLAM breaks down in bare hallways, so I built a monocular SLAM
+    system on vertical edges, with EM for data association and inverse-depth
+    parameterization (Gamma priors turn out to be delicate to tune).
+    <span class="meta">Videos:
+      <a href="Site/Media/hall6_all3.mov">edge-based SLAM</a> &middot;
+      <a href="Site/Media/hall6_height_fullsam-1.mov">with height estimation</a></span>
+  </div>
+
+  <div class="past-entry">
+    <b>Flying through a forest.</b>
+    A bio-inspired two-part vision system for an ARDrone in the wild: a peripheral
+    system picks out motion-salient nearby objects via optical-flow subspace methods
+    (by Richard Roberts), and a foveal system tracks the detected tree trunks with
+    model-based edge tracking (SPIE 2012).
+    <span class="meta">Video:
+      <a href="Site/Media/Duy-Richard-11-04-21-1_cut.mov">tree detection and tracking</a></span>
+  </div>
+
+  <h3>Mobile Augmented Reality &mdash; Georgia Tech &amp; Nokia Research (2007&ndash;2010)</h3>
+
+  <div class="past-entry">
+    <b>SURFTrac: continuous tracking and recognition for outdoor AR.</b>
+    A lightweight method that matches SURF features against a database of geo-tagged,
+    labeled images once, then tracks them locally frame-to-frame &mdash; fast enough to
+    label buildings live on a Nokia N95 at 8&ndash;12&nbsp;fps (CVPR 2009 oral, 5% acceptance;
+    demos at ISMAR&rsquo;08 and CVPR&rsquo;09; US patent).
+    <span class="meta">Video: <a href="https://www.youtube.com/watch?v=wRJTikAjRUo">SURFTrac</a></span>
+  </div>
+
+  <div class="past-entry">
+    <b>SURFTrac3D: full 6-DoF outdoor tracking.</b>
+    Extending SURFTrac to 3D: a feature database reconstructed with structure-from-motion
+    provides the map, RANSAC initializes the camera pose, and SURFTrac keeps the pose
+    updated across frames &mdash; stable enough to pin virtual 3D content on real buildings.
+    <span class="meta">Video: <a href="https://www.youtube.com/watch?v=Z1CZ5DoAiSU">SURFTrac3D</a></span>
+  </div>
+
+  <div class="past-entry">
+    <b>Template-based tracking for handheld AR.</b>
+    A PTAM-inspired template tracker for the Nokia N900, with performance comparable to
+    the tracker that later grew into Qualcomm&rsquo;s Vuforia.
+    <span class="meta">Video: <a href="Site/Media/patchTracking.mp4">patch tracking</a></span>
+  </div>
+
+  <div class="past-entry">
+    <b>Art of Defense: a collaborative handheld AR board game.</b>
+    A tabletop tower-defense game where players cooperate through camera phones, blending
+    physical game pieces with virtual gameplay (ACM SIGGRAPH Symposium on Video Games 2009).
+    <span class="meta">Videos:
+      <a href="https://www.youtube.com/watch?v=hSUuvgklsZw">SIGGRAPH 2009</a> &middot;
+      <a href="https://www.youtube.com/watch?v=sR_plHtkZ-Q">version 1</a> &middot;
+      <a href="https://vimeo.com/1766417">ISMAR&rsquo;08 demo</a></span>
+  </div>
+
+  <div class="past-entry">
+    <b>Lego edge tracking.</b>
+    With Yong-Dian Jian: real-time model-based edge tracking of textureless Lego
+    structures, where point features fail. After experiments with particle filters,
+    the stable solution was classic Gauss-Newton least squares &mdash; plus many small tricks.
+    <span class="meta">Video: <a href="https://www.youtube.com/watch?v=3nugeIPLppw">edge tracking</a></span>
+  </div>
+
+  <h3>Mixed-Reality Art &amp; Entertainment &mdash; Singapore (2003&ndash;2007)</h3>
+
+  <div class="past-entry">
+    <b>Magic Land.</b>
+    My Master&rsquo;s thesis at NUS: a live 3D human-capture system using 12 cameras in a
+    green room and a fast shape-from-silhouette algorithm, letting players see miniature
+    3D copies of themselves interact with virtual characters on an AR tabletop
+    (TVCG 2005; exhibited at Singapore Science Center, SIGCHI&rsquo;05, and WIRED NextFest&rsquo;05).
+    <span class="meta">Video: <a href="Site/Media/MagicLand%28web%29-1.mov">Magic Land</a></span>
+  </div>
+
+  <div class="past-entry">
+    <b>Periphery.</b>
+    An interactive art installation using two infrared cameras to track visitors and
+    their hands: approaching the board dissolves a live-captured modern scene into the
+    forest it once was; pointing reveals the artist-drawn past along the visitor&rsquo;s
+    fingertip (2nd International Art and Science Exhibition, Tsinghua University, 2006).
+  </div>
+
+  <div class="past-entry">
+    <b>Ultimate Commodity.</b>
+    One of the few traditional theater performances to use AR on stage: in a dystopian
+    Singaporean story where everyone&rsquo;s face becomes identical, we replaced actors&rsquo; heads
+    with a virtual model of the mother&rsquo;s head, live during the performance
+    (Esplanade Theater, Singapore 2006; Fringe Festival, Toronto 2007).
+  </div>
+
+  <div class="past-entry">
+    <b>Free Network Visible Network.</b>
+    With artists Clara Boj and Diego Diaz: wireless access points become AR markers, and
+    the invisible network traffic between them is visualized as translucent boxes and
+    donuts flying through the air (ISEA06 ZERO ONE, San Jose).
+  </div>
+
+  <div class="past-entry">
+    <b>And more.</b>
+    The vision-tracking component of Poultry Internet, demonstrated live on
+    <a href="https://www.youtube.com/watch?v=wyOZKRaNZbA">Good Morning America</a>;
+    Age Invaders (SIGCHI&rsquo;06); and Fragile!, an interactive media-art installation.
+  </div>
+</section>
+
+<section id="publications">
+  <h2>Publications</h2>
+  <ul class="pubs">
+    <li><span class="title">Learning Loco-Manipulation From SMPC Demonstrations With Sparse Offline-to-Online RL</span><br>
+      M. Schuck, M. Sorokin, S. Manni, <span class="me">D. Ta</span>, A.P. Schoellig, M. Hutter, S. Le Cléac&rsquo;h, J. Brüdigam.
+      <span class="venue-name">CoRL</span>, 2026. <a href="https://arxiv.org/abs/2608.12063">arXiv</a></li>
+    <li><span class="title">Sumo: Dynamic and Generalizable Whole-Body Loco-Manipulation</span><br>
+      J.Z. Zhang, M. Sorokin, J. Brüdigam, B. Hung, S. Phillips, D. Yershov, F. Niroui, T. Zhao, L. Fermoselle, X. Zhu, C. Cao, <span class="me">D. Ta</span>, T. Pang, J. Wang, P. Culbertson, Z. Manchester, S. Le Cléac&rsquo;h.
+      Presented at the <span class="venue-name">RSS 2026 Workshop on Whole-Body Control and Manipulation</span>. <a href="https://arxiv.org/abs/2604.08508">arXiv</a> &middot; <a href="https://sumo.rai-inst.com/">project</a></li>
+    <li><span class="title">NovaFlow: Zero-Shot Manipulation via Actionable Flow from Generated Videos</span><br>
+      H. Li, L. Sun, Y. Hu, <span class="me">D. Ta</span>, J. Barry, G. Konidaris, J. Fu.
+      <span class="venue-name">ICRA</span>, 2026. <a href="https://arxiv.org/abs/2510.08568">arXiv</a> &middot; <a href="https://novaflow.lhy.xyz/">project</a></li>
+    <li><span class="title">ASHiTA: Automatic Scene-grounded HIerarchical Task Analysis</span><br>
+      Y. Chang, L. Fermoselle, <span class="me">D. Ta</span>, B. Bucher, L. Carlone, J. Wang.
+      <span class="venue-name">CVPR</span>, 2025. <a href="https://arxiv.org/abs/2504.06553">arXiv</a></li>
+    <li><span class="title">Zero-shot Object-Centric Instruction Following: Integrating Foundation Models with Traditional Navigation</span><br>
+      S. Raychaudhuri, <span class="me">D. Ta</span>, K. Ashton, A.X. Chang, J. Wang, B. Bucher.
+      arXiv preprint, 2024. <a href="https://arxiv.org/abs/2411.07848">arXiv</a></li>
+    <li><span class="title">Conditional Energy-Based Models for Implicit Policies: The Gap Between Theory and Practice</span><br>
+      <span class="me">D.N. Ta</span>, E. Cousineau, H. Zhao, S. Feng.
+      <span class="venue-name">RSS 2022 Workshop on Implicit Representations for Robotic Manipulation</span>. <a href="https://arxiv.org/abs/2207.05824">arXiv</a></li>
+    <li><span class="title">Fast Nonlinear Approximation of Pose Graph Node Marginalization</span><br>
+      <span class="me">D.N. Ta</span>, N. Banerjee, S. Eick, E. Pittore, S. Lenser.
+      <span class="venue-name">ICRA</span>, 2018.</li>
+    <li><span class="title">Differential Dynamic Programming for Optimal Estimation</span><br>
+      M. Kobilarov, <span class="me">D.N. Ta</span>, F. Dellaert.
+      <span class="venue-name">ICRA</span>, 2015.</li>
+    <li><span class="title">Linear-Time Estimation with Tree Assumed Density Filtering and Low-Rank Approximation</span><br>
+      <span class="me">D.N. Ta</span>, F. Dellaert.
+      <span class="venue-name">IROS</span>, 2014.</li>
+    <li><span class="title">A Factor Graph Approach to Estimation and Model Predictive Control on Unmanned Aerial Vehicles</span><br>
+      <span class="me">D.N. Ta</span>, M. Kobilarov, F. Dellaert.
+      <span class="venue-name">ICUAS</span>, 2014.</li>
+    <li><span class="title">Vistas and Parallel Tracking and Mapping with Wall-Floor Features: Enabling Autonomous Flight in Man-made Environments</span><br>
+      <span class="me">D.N. Ta</span>, K. Ok, F. Dellaert.
+      <span class="venue-name">Robotics and Autonomous Systems</span>, 2014.</li>
+    <li><span class="title">Monocular Parallel Tracking and Mapping with Odometry Fusion for MAV Navigation in Feature-Lacking Environments</span><br>
+      <span class="me">D.N. Ta</span>, K. Ok, F. Dellaert.
+      <span class="venue-name">IROS&rsquo;13 Workshop on Vision-based Closed-Loop Control and Navigation of Micro Helicopters in GPS-denied Environments</span>, 2013.</li>
+    <li><span class="title">Saliency Detection and Model-based Tracking: A Two-Part Vision System for Small Robot Navigation in Forested Environments</span><br>
+      R. Roberts, <span class="me">D.N. Ta</span>, J. Straub, F. Dellaert.
+      <span class="venue-name">SPIE Defense, Security, and Sensing</span>, 2012.</li>
+    <li><span class="title">Attitude Heading Reference System with Rotation-Aiding Visual Landmarks</span><br>
+      C. Beall, <span class="me">D.N. Ta</span>, K. Ok, F. Dellaert.
+      <span class="venue-name">FUSION</span>, 2012.</li>
+    <li><span class="title">Vistas and Wall-Floor Intersection Features: Enabling Autonomous Flight in Man-made Environments</span><br>
+      K. Ok, <span class="me">D.N. Ta</span>, F. Dellaert.
+      <span class="venue-name">IROS Workshop on Visual Control of Mobile Robots</span>, 2012.</li>
+    <li><span class="title">SURFTrac: Efficient Tracking and Continuous Object Recognition Using Local Feature Descriptors</span><br>
+      <span class="me">D.N. Ta</span>, W.C. Chen, N. Gelfand, K. Pulli.
+      <span class="venue-name">CVPR</span>, 2009. <i>(Oral, 5% acceptance rate)</i></li>
+    <li><span class="title">Art of Defense: A Collaborative Handheld Augmented Reality Board Game</span><br>
+      <span class="me">D.N. Ta</span>, K. Raveendran, Y. Xu, K. Spreen, B. MacIntyre.
+      <span class="venue-name">ACM SIGGRAPH Symposium on Video Games</span>, 2009.</li>
+    <li><span class="title">Free Network Visible Network</span><br>
+      C. Boj, D. Diaz, <span class="me">D.N. Ta</span>, W. Liu, A.D. Cheok.
+      <span class="venue-name">ISEA06</span>, 2006.</li>
+    <li><span class="title">Age Invaders: Social and Physical Inter-Generational Family Entertainment</span><br>
+      E.T. Khoo, S.P. Lee, A.D. Cheok, <span class="me">D.N. Ta</span>.
+      <span class="venue-name">Springer Virtual Reality, VR-based Edutainment</span>, 2006.</li>
+    <li><span class="title">Social and Physical Interactive Paradigms for Mixed-Reality Entertainment</span><br>
+      A.D. Cheok, K.S. Teh, <span class="me">D.N. Ta</span>, Q.T.C. Tran, S.P. Lee, W. Liu, C.C. Li, D. Diaz, C. Boj.
+      <span class="venue-name">ACM Computers in Entertainment</span>, 2006.</li>
+    <li><span class="title">Real Time 3D Human Capture System for Mixed-Reality Art and Entertainment</span><br>
+      <span class="me">D.N. Ta</span>, Q.T.C. Tran, K. Xu, A.D. Cheok, et al.
+      <span class="venue-name">IEEE Transactions on Visualization and Computer Graphics</span>, 2005.</li>
+    <li><span class="title">Magic Land: A 3D Human Capture Mixed Reality System for Museum Experiences</span><br>
+      Q.T.C. Tran, <span class="me">D.N. Ta</span>, A.D. Cheok, et al.
+      <span class="venue-name">Int&rsquo;l Workshop: Re-Thinking Technology in Museums</span>, 2005.</li>
+    <li><span class="title">Magic Land: Live 3D Human Capture Mixed Reality Interactive System</span><br>
+      Q.T.C. Tran, <span class="me">D.N. Ta</span>, A.D. Cheok, et al.
+      <span class="venue-name">CHI&rsquo;05 Extended Abstracts</span>, 2005.</li>
+    <li><span class="title">Searching the Web: A Semantics-Based Approach</span><br>
+      T.H. Cao, <span class="me">D.N. Ta</span>, Q.T.C. Tran.
+      <span class="venue-name">HPSC</span>, 2003.</li>
+  </ul>
+
+  <h3>Patents</h3>
+  <ul class="pubs" style="counter-reset: pub 4;">
+    <li><span class="title">Systems, devices, and methods for generating a pose estimate of an object</span><br>
+      with K. Hashimoto, E.A. Cousineau, R.L. Tedrake. <a href="https://www.freepatentsonline.com/11308314.html">US Patent 11308314</a>, 2022.</li>
+    <li><span class="title">Systems and methods for calibrating a depth-IR image offset</span><br>
+      with A. Alspach, N.S. Kuppuswamy. <a href="https://www.freepatentsonline.com/10628968.html">US Patent 10628968</a>, 2020.</li>
+    <li><span class="title">Method, apparatus, and computer program product for object tracking</span><br>
+      with W.-C. Chen, N. Gelfand, K. Pulli. US Patents <a href="https://www.freepatentsonline.com/y2010/0232643.html">US20100232643 A1</a> (2009), <a href="https://www.freepatentsonline.com/8818024.html">US8818024 B2</a> (2014).</li>
+  </ul>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>The previous version of this site (2005&ndash;2014, made with iWeb) is
+    <a href="Site/Duy-Nguyen/Duy-Nguyen.html">archived here</a>.
+    My CV is always up to date at <a href="CV.pdf">CV.pdf</a>, rebuilt automatically
+    from <a href="https://github.com/thduynguyen/thduynguyen.github.io/tree/master/resume">LaTeX source</a>
+    on every push.</p>
+    <p>&copy; 2026 Duy-Nguyen Ta &middot; Last updated September 2026</p>
+  </div>
+</footer>
+
+</body>
+</html>
