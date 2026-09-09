@@ -1,0 +1,7 @@
+CV.pdf
+*.log
+*.synctex.gz
+*.aux
+*.out
+*.toc
+.claude/

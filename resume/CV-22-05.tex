@@ -1,0 +1,678 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% -*- coding: UTF-8; -*-
+% vim: set fenc=utf-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SIMPLE-RESUME-CV
+%% <https://github.com/zachscrivena/simple-resume-cv>
+%% This is free and unencumbered software released into the
+%% public domain; see <http://unlicense.org> for details.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% See "README.md" for instructions on compiling this document.
+
+\documentclass[letterpaper,MMMyyyy,nonstopmode]{simpleresumecv}
+% Class options:
+% a4paper, letterpaper, nonstopmode, draftmode
+% MMMyyyy, ddMMMyyyy, MMMMyyyy, ddMMMMyyyy, yyyyMMdd, yyyyMM, yyyy
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{hyperref}
+
+% CV Info (to be customized).
+\newcommand{\CVAuthor}{Duy Ta}
+\newcommand{\CVTitle}{Duy Ta's CV}
+\newcommand{\CVNote}{CV compiled on {\today}}
+\newcommand{\CVWebpage}{http://thduynguyen.github.io}
+\newcommand{\CVLinkedIn}{https://www.linkedin.com/in/duynguyen-ta/}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={\CVAuthor},
+pdfsubject={\CVWebpage},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+unicode=true,
+bookmarks=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks,
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=cyan,
+}
+
+% Shorthand.
+\newcommand{\Code}[1]{\mbox{\textbf{#1}}}
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\Title{\CVAuthor}
+
+\begin{SubTitle}
+\href{https://www.google.com/maps/place/29+Bernard+St,+Lexington,+MA+02420/}
+{29 Bernard Street, Lexington, MA 02420, USA}
+\par
+\href{mailto:thduynguyen@gmail.com}
+{thduynguyen@gmail.com}
+\,\SubBulletSymbol\,
++1\,(617)\,415-8387
+\,\SubBulletSymbol\,
+\href{\CVWebpage}
+{\url{Homepage}}
+\,\SubBulletSymbol\,
+\href{\CVLinkedIn}
+{\url{LinkedIn}}
+\end{SubTitle}
+
+\begin{Body}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% RESEARCH INTERESTS %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Research Interests}
+{Research Interests}
+{PDF:ResearchInterests}
+
+\BulletItem
+\textbf{Probabilistic machine learning} and \textbf{inference} for robust perception and sensorimotor policy in robot manipulation and navigation.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% WORK EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Work Experience}
+{Work Experience}
+{PDF:WorkExperience}
+\Entry
+{\textit{Roboticist}, \textbf{Robotics and AI Institute}}, Dexterous Mobile Manipulation team
+\hfill
+\DatestampYM{2023}{10} -- \DatestampY{Now}
+\Gap
+\BulletItem
+Diffusion models for policy and dynamic learning for contact-rich and whole-body manipulation
+\BulletItem
+Scene graphs for semantic navigation and scene-grounded hierarchical task analysis
+\BulletItem
+Language-inferred factor graphs for instruction following
+\BulletItem
+Bazel build systems, CI infrastructure, and engineering support for company-wide development
+\BigGap
+\Entry
+{\textit{Principle Engineer, Perception}, \textbf{Outrider Inc.}}
+\Gap
+\BulletItem
+State estimation, localization and mapping, object tracking, autonomous navigation
+\hfill
+\DatestampYM{2022}{07} -- \DatestampY{Now}
+
+\BigGap
+\Entry
+{\textit{Senior Research Engineer}, \textbf{Toyota Research Institute}}, Dexterous Manipulation
+\Gap
+\BulletItem
+\textbf{Intuitive Physics} - Manipulation of hard-to-model objects for food prep applications
+\hfill
+\DatestampY{2020} -- \DatestampYM{2022}{06}
+\SubBulletItem
+Conditional Energy-based Models for learning policies from demonstrations with Behavior Cloning 
+\BulletItem
+\textbf{Object perception for robot manipulation} -- \textit{Perception team lead}
+\hfill
+\DatestampYM{2017}{10} -- \DatestampY{2020}
+\SubBulletItem
+Neural networks for \underline{probabilistic} object pose estimation in cluttered environments
+\SubBulletItem
+Multicamera calibration, hand-eye robot calibration, depth-based object tracking and visual odometry
+\SubBulletItem
+Aleatoric and epistemic uncertainties, out-of-domain detection, distribution shift in continual learning
+
+\BigGap
+\Entry
+{\textit{Senior Robotics and Vision Scientist}, \textbf{iRobot Corporation}, Technology Organization}
+\Gap
+\BulletItem
+\textbf{Pose-graph sparsification for long-term persistent mapping}
+\hfill
+\DatestampYM{2017}{01} -- \DatestampYM{2017}{09}
+\SubBulletItem
+Fast and near optimal approximation method for pose graph node marginalization and edge removal.
+\Gap
+\BulletItem
+\textbf{Highly optimized generic SLAM backend for resource-limited robots}
+\hfill
+\DatestampY{2015} -- \DatestampY{2016}
+\SubBulletItem
+Developed a new generic factor graph based SLAM backend, highly optimized for memory resources using C++ template meta-programming.
+\SubBulletItem
+Deployed on Roomba 980 with extremely limited computational resources (LPC32xx, ARM 32bit). 
+\SubBulletItem
+About \underline{30$\times$ faster} than gtsam's preconditioned conjugate gradient implementation.
+
+\BigGap
+\Entry
+{\textit{Research Assistant}, \textbf{Georgia Institute of Technology}, College of Computing}
+\Gap
+\BulletItem
+\textbf{A unified framework for perception and optimal control in factor graphs}
+\hfill
+\DatestampY{2013} -- \DatestampY{2014}
+\SubBulletItem
+Enhanced factor graph capabilities in representing and solving deterministic optimal control problems. 
+\SubBulletItem
+Used integrators on Lie-group manifolds to represent dynamics constraints as hard constrained factors.
+\SubBulletItem
+Implemented LP, QP, and SQP to optimize constrained factor graphs.
+
+\Gap
+\BulletItem
+\textbf{Object-centric approaches for fast autonomous navigation}
+\hfill
+\DatestampY{2013} -- \DatestampY{2014}
+% \begin{Detail}
+\SubBulletItem
+Designed linear-time object-centric approximation for filtering-based SLAM. 
+% \end{Detail}
+
+\Gap
+\BulletItem
+\textbf{Perception for autonomous navigation on a small quad-rotor}
+\hfill
+\DatestampY{2011} -- \DatestampY{2012}
+% \begin{Detail}
+\SubBulletItem
+Developed monocular SLAM on ARDrone quadrotor for autonomous navigation in challenging environments: outdoor forests and indoor hallways.
+% \end{Detail}
+
+\Gap
+\BulletItem
+\textbf{Tracking and pose estimation for Augmented Reality (AR) on mobile devices}
+\hfill
+\DatestampY{2007} -- \DatestampY{2010}
+% \begin{Detail}
+\SubBulletItem
+Implemented robust feature-based tracking, model-based edge tracking, and direct method template patch tracking for Augmented Reality applications.
+% \end{Detail}
+
+\BigGap
+\Entry
+{\textit{Research Intern}, \textbf{Nokia Research Center}}
+\Gap
+\BulletItem
+\textbf{Urban Scene Recognition for Augmented Reality}
+\hfill
+Summer \DatestampY{2010}
+% \begin{Detail}
+\SubBulletItem
+Implemented vocabulary tree for scene recognition. 
+\SubBulletItem
+Experimented with many feature detectors and descriptors.
+% \end{Detail}
+
+\Gap
+\BulletItem
+\textbf{Real-time Planar Target Tracking for Handheld AR}
+\hfill
+Summer \DatestampY{2009}
+% \begin{Detail}
+\SubBulletItem
+Implemented a robust feature-based system for tracking planar targets on mobile devices. Deployed on Nokia N900.
+% \end{Detail}
+
+\Gap
+\BulletItem
+\textbf{Real-time Tracking for Mobile AR with Database of Geo-tagged Labeled Images}
+\hfill
+Summer \DatestampY{2008}
+% \begin{Detail}
+\SubBulletItem
+Developed a novel outdoor tracking method for AR using SURF features with a database of geo-tagged and labeled images. Deployed on Nokia N95 phone (8-12fps). 
+CVPR 2009 oral presentation (\textit{5\% acceptance rate}). 
+% \end{Detail}
+
+\BigGap
+\Entry
+{\textit{Software Developer}, \textbf{Nanyang Technological University}, Interaction and Entertainment Research Center}
+\Gap
+\BulletItem
+\textbf{Augmented Reality and Interactive Systems for Arts and Entertainment}
+\hfill
+\DatestampY{2005} -- \DatestampY{2007}
+% \begin{Detail}
+\SubBulletItem
+Developed many interaction systems for arts and entertainment with AR and computer vision for various national and international exhibitions and theater performances.
+% \end{Detail}
+
+\BigGap
+\Entry
+{\textit{Research Assistant}, \textbf{ National University of Singapore}, Dept. of Electrical and Computer Engineering}
+\Gap
+\BulletItem
+\textbf{Magic Land}
+\hfill
+\DatestampY{2003} -- \DatestampY{2005}
+% \begin{Detail}
+\SubBulletItem
+Installed a shape-from-silhouette 3D capture system with 9 cameras. The live-captured 3D models are rendered from a virtual viewpoint in AR in real-time. 
+\SubBulletItem
+Developed Magic Land, an interactive tabletop AR game that allows players to see and interact with their own 3D images and other virtual characters. 
+\SubBulletItem
+Exhibited at Singapore Science Center, SIGCHI’05, WIRED NextFest’05. Journal paper TVCG'05.
+% \end{Detail}
+
+
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Education}
+{Education}
+{PDF:Education}
+
+\Entry
+{\textbf{Georgia Institute of Technology}},
+Atlanta, Georgia, USA
+
+\Gap
+\BulletItem
+Ph.D. in Computer Science
+% \begin{Detail}
+\SubBulletItem
+Advisor: Prof. Frank Dellaert, in perception and control for autonomous navigation
+\hfill
+\DatestampY{2011} -- \DatestampY{2014}
+\SubBulletItem
+Advisor: Prof. Blair MacIntyre, in perception for Augmented Reality
+\hfill
+\DatestampY{2007} -- \DatestampY{2010}
+% \end{Detail}
+
+\BigGap
+\Entry
+{\textbf{National University of Singapore}}
+Dept. of Electrical and Computer Engineering, Singapore
+
+\Gap
+\BulletItem
+M.Eng. in Computer Engineering
+\hfill
+\DatestampY{2003} -- \DatestampY{2005}
+% \begin{Detail}
+\SubBulletItem
+Live 3D human capture for mixed reality interactive systems
+% \end{Detail}
+
+\BigGap
+\Entry
+{\textbf{HCMC University of Technology}}, School of Computer Engineering, Vietnam
+
+\Gap
+\BulletItem
+B.Eng. in Computer Engineering
+\hfill
+\DatestampY{1998} -- \DatestampY{2003}
+% \begin{Detail}
+\SubBulletItem
+\textit{Summa cum laude}. Top 5 out of 220 students.
+% \end{Detail}
+
+
+
+%%%%%%%%%%%%%%%
+%% SKILLS %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Skills}
+{Skills}
+{PDF:Skills}
+
+\Entry
+{\textbf{Theory:}}
+\Gap
+\BulletItem
+\underline{Specialization}: factor graphs, visual SLAM, pose graph SLAM, Bayesian methods.
+\BulletItem
+\underline{Experience}: optimization, Lie-groups, energy-based models, probabilistic machine learning.
+
+\BigGap
+\Entry
+{\textbf{Practice:}}
+\Gap
+\BulletItem
+\underline{Programming}: Python, C/C++, Bazel, ROS
+\BulletItem
+\underline{Platforms}: Linux
+
+%%%%%%%%%%%%%%%%%%
+%% PUBLICATIONS %%
+%%%%%%%%%%%%%%%%%%
+
+\Section
+{Publications}
+{Publications}
+{PDF:Publications}
+
+% \SubSection
+% {Conferences / Workshops}
+% {Conferences}
+% {PDF:Conferences}
+
+% Declare a new group to limit the scope of \MaxNumberedItem to this subsection.
+\begingroup
+\renewcommand{\MaxNumberedItem}{[8888]}
+
+\Gap
+\NumberedItem{[20]}
+{Y.~Chang, L.~Fermoselle, \underline{D.~Ta}, B.~Bucher, L.~Carlone, J.~Wang,
+\textbf{ASHiTA: Automatic Scene-grounded HIerarchical Task Analysis}, 
+\textit{CVPR},
+\DatestampY{2025},}
+
+\Gap
+\NumberedItem{[19]}
+{\underline{D.N.~Ta}, E.~Cousineau, H.~Zhao, S.~Feng,
+\textbf{Conditional energy-based models for implicit policies: The gap between theory and practice}, 
+\textit{RSS 2022 Workshop on Implicit Representations for Robotic Manipulation
+},
+\DatestampY{2022},}
+
+\Gap
+\NumberedItem{[18]}
+{\underline{D.N.~Ta}, N.~Banerjee, S.~Eick, E.~Pittore, and S.~ Lenser,
+\textbf{Fast Nonlinear Approximation of Pose Graph Node Marginalization},
+\textit{ICRA},
+\DatestampY{2018}.}
+
+\Gap
+\NumberedItem{[17]}
+{M.~Kobilarov, \underline{D.N.~Ta}, F.~Dellaert,
+\textbf{Differential Dynamic Programming for Optimal Estimation},
+\textit{ICRA},
+\DatestampY{2015}.}
+
+\Gap
+\NumberedItem{[16]}
+{\underline{D.N.~Ta}, F.~Dellaert,
+\textbf{Linear-Time Estimation with Tree Assumed Density Filtering and Low-Rank Approximation},
+\textit{IROS},
+\DatestampY{2014}.}
+
+\Gap
+\NumberedItem{[15]}
+{\underline{D.N.~Ta}, M.~Kobilarov, F.~Dellaert,
+\textbf{A Factor Graph Approach to Estimation and Model Predictive Control on Unmanned Aerial Vehicles},
+\textit{ICUAS},
+\DatestampY{2014}.}
+
+\Gap
+\NumberedItem{[14]}
+{\underline{D.N.~Ta}, K.~Ok, F.~Dellaert,
+\textbf{Vistas and parallel tracking and mapping with Wall-Floor Features: Enabling autonomous flight in man-made environments},
+\textit{Robotics and Autonomous Systems},
+Available online 28 March 2014, ISSN 0921-8890.}
+
+\Gap
+\NumberedItem{[13]}
+{\underline{D.N.~Ta}, K.~Ok, F.~Dellaert,
+\textbf{Monocular Parallel Tracking and Mapping with Odometry Fusion for MAV Navigation in Feature-lacking Environments},
+\textit{IEEE/RSJ IROS'13 International Workshop on Vision-based Closed-Loop Control and Navigation of Micro Helicopters in GPS-denied Environments},
+\DatestampY{2013}.}
+
+\Gap
+\NumberedItem{[12]}
+{ R. Roberts, \underline{D.N.~Ta}, J.~Straub, F.~Dellaert,
+\textbf{Saliency detection and model-based tracking: a two part vision system for small robot navigation in forested environment},
+\textit{SPIE Defense, Security, and Sensing},
+International Society for Optics and Photonics,
+\DatestampY{2012}.}
+
+\Gap
+\NumberedItem{[11]}
+{ C. Beall, \underline{D.N.~Ta}, K.~Ok, F.~Dellaert,
+\textbf{Attitude heading reference system with rotation-aiding visual landmarks},
+\textit{IEEE 15th International Conference on Information Fusion (FUSION)},
+\DatestampY{2012}.}
+
+
+\Gap
+\NumberedItem{[10]}
+{ K.~Ok, \underline{D.N.~Ta}, F.~Dellaert,
+\textbf{Vistas and wall-floor intersection features-enabling autonomous flight in man-made environments},
+\textit{IROS Workshop on Visual Control of Mobile Robots},
+\DatestampY{2012}.}
+
+
+\Gap
+\NumberedItem{[9]}
+{ \underline{D.N.~Ta}, W.C.~Chen, N.~Gelfand, and K.~Pulli,
+\textbf{SURFTrac: Efficient tracking and continuous object recognition using local feature descriptors},
+\textit{CVPR},
+\DatestampY{2009}. \textit{(Oral, 5\% acceptance rate)}}
+
+\Gap
+\NumberedItem{[8]}
+{ \underline{D.N.~Ta}, K.~Raveendran, Y.~Xu, K.~Spreen, and B.~MacIntyre,
+\textbf{Art of defense: a collaborative handheld augmented reality board game},
+\textit{Proceedings of the 2009 ACM SIGGRAPH Symposium on Video Games},
+pp.~135–142,
+\DatestampY{2009}.}
+
+\Gap
+\NumberedItem{[7]}
+{  C.~Boj, D.~Diaz, \underline{D.N.~Ta}, W.~Liu, A.D.~Cheok,
+\textbf{Free Network Visible Network},
+\textit{11th International Symposium of Electronic Arts, ISEA06},
+San Jose, USA.
+pp.~7-13,
+\DatestampYM{2006}{08}.}
+
+
+\Gap
+\NumberedItem{[6]}
+{E.T.~Khoo, S.P.~Lee, A.D.~Cheok, and \underline{D.N.~Ta},
+\textbf{Age Invaders: Social and Physical Inter-Generational Family Entertainment},
+\textit{Special Issue of Springer Journal Virtual Reality, VR-based Edutainment},
+\DatestampY{2006}.}
+
+
+\Gap
+\NumberedItem{[5]}
+{A.D.~Cheok, K.S.~Teh, \underline{D.N.~Ta}, Q.T.C.~Tran, S.P.~Lee, W.~Liu, C.C.~Li, D.~Diaz, and C.~Boj,
+\textbf{Social and Physical Interactive Paradigms for Mixed-Reality Entertainment},
+\textit{ACM Computer in Entertainment (CIE)},
+vol.~4,
+no.~2,
+pp.~5,
+\DatestampYM{2006}{04}.}
+
+\Gap
+\NumberedItem{[4]}
+{\underline{D.N.~Ta},  Q.T.C.~Tran, K.~Xu, A.D.~Cheok, S.L.~Teo, Z.Y.~Zhou, A.~Mallawaarachchi, S.P.~Lee, W.~Liu, H.S.~Teo, T.N.~Le, Y.~Li, and H.~Kato,
+\textbf{Real Time 3D Human Capture System for Mixed-Reality Art and Entertainment},
+\textit{IEEE Transaction on Visualization and Computer Graphics (TVCG)},
+vol.~11,
+no.~6,
+pp.~706-721,
+\DatestampYM{2005}{11-12}.}
+
+\Gap
+\NumberedItem{[3]}
+{ Q.T.C.~Tran, \underline{D.N.~Ta},  A.D.~Cheok, S.L.~Teo, K.~Xu, Z.Y.~Zhou, A.~Mallawaarachchi, S.P.~Lee, W.~Liu, H.S.~Teo, T.N.~Le, Y.~Li, and H.~Kato,,
+\textbf{Magic Land: a 3D Human Capture Mixed Reality System for Museum Experiences},
+\textit{International Workshop: Re-Thinking Technology in Museums: Towards a new understanding of visitors experiences in museums},
+Limerick, Ireland,
+\DatestampY{2005}.}
+
+\Gap
+\NumberedItem{[2]}
+{ Q.T.C.~Tran, \underline{D.N.~Ta},  A.D.~Cheok, S.L.~Teo, K.~Xu, Z.Y.~Zhou, A.~Mallawaarachchi, S.P.~Lee, W.~Liu, H.S.~Teo, T.N.~Le, Y.~Li, and H.~Kato,,
+\textbf{Magic Land: Live 3d Human Capture Mixed Reality Interactive System},
+\textit{CHI '05 Extended Abstracts on Human Factors in Computing Systems},
+ACM Press, New York, NY, 
+pp.~1142-1143,
+Portland, OR, USA,
+\DatestampYM{2005}{04}.}
+
+
+\Gap
+\NumberedItem{[1]}
+{ T.H.~Cao, \underline{D.N.~Ta}, Q.T.C.~Tran,
+\textbf{Searching the Web: a Semantics-Based Approach},
+\textit{Bock, H.G.et al.(Eds): Modelling, Simulation and Optimization of Complex Processes, Proceedings of the 2003 International Conference on High Performance Scientific Computing (HPSC2003).},
+Springer-Verlag, 
+pp.~57-68,
+Ha Noi, Viet Nam,
+\DatestampYM{2003}{03}.}
+
+% %%%%%%%%%%%%%%%%
+% %% PATENTS %%
+% %%%%%%%%%%%%%%%%
+
+\Section
+{Patents}
+{Patents}
+{PDF:Patents}
+
+\BulletItem
+\textbf{Systems, devices, and methods for generating a pose estimate of an object}, with Kunimatsu Hashimoto, Eric A. Cousineau, and Russell L. Tedrake, \href{https://www.freepatentsonline.com/11308314.html}{USA Patent 11308314}, Apr 2022.
+
+\BulletItem
+\textbf{Systems and mdethods for calibrating a depth-IR image offset}, with Alexander Alspach and Naveen S. Kuppuswamy, \href{https://www.freepatentsonline.com/10628968.html}{USA Patent 10628968}, Apr 2020.
+
+\BulletItem
+\textbf{Method, apparatus, and computer program product for object tracking}, with Wei-Chao Chen, Natasha Gelfand, and Kari Antero Pulli, \href{https://www.freepatentsonline.com/y2010/0232643.html}{USA Patent US20100232643 A1}, Sep 2009, and \href{https://www.freepatentsonline.com/8818024.html}{US8818024 B2}, Aug 2014.
+
+% %%%%%%%%%%%%%%%%
+% %% DEMO %%
+% %%%%%%%%%%%%%%%%
+
+\Section
+{Demos \& Exhibitions}
+{Demos \& Exhibitions}
+{PDF:DemonstrationsAndExhibitions}
+
+\BulletItem
+\textbf{SURFTrac}: ISMAR 2008, CVPR 2009
+\BulletItem
+\textbf{Art-of-Defense}: ISMAR 2008
+\BulletItem
+\textbf{Periphery}: The 2nd International Art and Science Exhibition, Tsinghua University, Beijing China 2006
+\BulletItem
+\textbf{Ultimate Commodity}: Esplanade Theater, Singapore, 2006, and Fringe Festival, Toronto, 2007
+\BulletItem
+\textbf{Free Network Visible Network}: ISEA06 Zero One, San Jose, 2006
+\BulletItem
+\textbf{Magic Land}: WIRED NextFest Chicago 2005, SIGCHI 2005, Singapore Science Center 2004
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEACHING EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Teaching Experience}
+{Teaching Experience}
+{PDF:TeachingExperience}
+
+\Entry
+{\textit{Teaching Assistant}, \textbf{Georgia Institute of Technology}}
+\hfill
+2011
+\Gap
+\BulletItem
+CS 7495 Advanced Computer Vision
+
+\BigGap
+\Entry
+{\textit{Teaching Assistant}, \textbf{National University of Singapore}}
+\hfill
+2004
+\Gap
+\BulletItem
+EE 2007 Microprocessor System. Assembly language programming for Intel 8086/8088 microprocessor
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% AWARDS & SCHOLARSHIPS %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Scholarships}
+{Scholarships}
+{PDF:Scholarships}
+
+\BulletItem
+Research scholarship, National University of Singapore
+\hfill
+\DatestampY{2003} --
+\DatestampY{2005}
+
+\Gap
+\BulletItem
+Academic excellence scholarship, HCMC University of Technology, Vietnam
+\hfill
+\DatestampY{1998} --
+\DatestampY{2003}
+
+\Gap
+\BulletItem
+Academic excellence scholarship, High School for the Gifted, VN National University
+\hfill
+\DatestampY{1995} --
+\DatestampY{1998}
+
+
+\endgroup
+
+% %%%%%%%%%%%%%%%%
+% %% REFERENCES %%
+% %%%%%%%%%%%%%%%%
+
+\Section
+{References}
+{References}
+{PDF:References}
+
+\BulletItem
+\textbf{Professor Frank Dellaert}
+\newline
+Georgia Institute of Technology
+\newline
+Atlanta, Georgia, USA
+\newline
+\href{mailto:frank.dellaert@cc.gatech.edu}
+{frank.dellaert@cc.gatech.edu}
+
+\end{Body}
+
+%%%%%%%%%%%
+% CV NOTE %
+%%%%%%%%%%%
+
+\UseNoteFont%
+\null\hfill%
+[\textit{\CVNote}]
+
+\end{document}

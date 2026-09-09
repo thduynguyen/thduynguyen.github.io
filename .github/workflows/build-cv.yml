@@ -1,0 +1,54 @@
+name: Build CV
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'resume/**'
+      - '.github/workflows/build-cv.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Cache tectonic packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/Tectonic
+          key: tectonic-${{ hashFiles('resume/CV.tex') }}
+          restore-keys: tectonic-
+
+      - name: Install tectonic
+        run: curl --proto '=https' --tlsv1.2 -fsSL https://drop-sh.fullyjustified.net | sh
+
+      - name: Build CV
+        working-directory: resume
+        run: ../tectonic CV.tex
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: CV
+          path: resume/CV.pdf
+
+      # Publish the PDF at the site root so it is served at
+      # https://thduynguyen.github.io/CV.pdf. Committing to the root
+      # does not match the 'resume/**' path filter, so this cannot
+      # retrigger the workflow.
+      - name: Publish PDF to site root
+        run: |
+          cp resume/CV.pdf CV.pdf
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add CV.pdf
+          if ! git diff --cached --quiet; then
+            git commit -m "Auto-build CV.pdf"
+            git pull --rebase origin master
+            git push
+          fi
