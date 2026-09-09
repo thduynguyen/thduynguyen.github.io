@@ -182,7 +182,7 @@
     (Siyuan Feng, Eric Cousineau &mdash; the group that has since spun out as Walden
     Robotics): a deep dive into why implicit, energy-based behavior-cloning policies
     are so hard to train in practice. Many failed experiments later, we documented the
-    gap between EBM theory and practice (RSS 2022 workshop). That same summer,
+    gap between EBM theory and practice (<a href="https://arxiv.org/abs/2207.05824">RSS 2022 workshop</a>). That same summer,
     Diffusion Policy &mdash; the landmark work of Cheng Chi, then a TRI intern from
     Columbia &mdash; showed how denoising diffusion sidesteps exactly these training
     pathologies. This work is what pulled me toward imitation learning and diffusion
@@ -196,7 +196,7 @@
     marginalizing old nodes creates dense, expensive cliques. At iRobot I developed a
     fast, near-optimal nonlinear approximation for node marginalization and edge
     sparsification &mdash; keeping long-term graph SLAM tractable on small embedded
-    devices like the Roomba&rsquo;s (ICRA 2018).
+    devices like the Roomba&rsquo;s (<a href="https://doi.org/10.1109/ICRA.2018.8460979">ICRA 2018</a>).
     <span class="meta">Video:
       <a href="https://www.youtube.com/watch?v=yOQ3Rb64h0E">ICRA 2018 spotlight</a></span>
   </div>
@@ -209,23 +209,23 @@
     We extended factor graphs from estimation to deterministic optimal control:
     dynamics constraints are discretized via integration on Lie-group manifolds and
     imposed as constrained factors, solved with an SQP formulation that reveals an
-    elegant connection between primal and dual factor graphs (ICUAS 2014, with
+    elegant connection between primal and dual factor graphs (<a href="https://dellaert.github.io/files/Ta14icuas.pdf">ICUAS 2014</a>, with
     Prof. Marin Kobilarov). A companion line of work derived differential dynamic
-    programming for optimal estimation (ICRA 2015).
+    programming for optimal estimation (<a href="https://dellaert.github.io/files/Kobilarov15icra.pdf">ICRA 2015</a>).
   </div>
 
   <div class="past-entry">
     <b>Linear-time SLAM with incremental tree filtering.</b>
     My thesis work explored object-centric approaches to fast estimation, leading to
     linear-time approximation algorithms for information-filtering SLAM &mdash; a problem
-    that is traditionally cubic in the number of features (IROS 2014).
+    that is traditionally cubic in the number of features (<a href="https://dellaert.github.io/files/Ta14iros.pdf">IROS 2014</a>).
   </div>
 
   <div class="past-entry">
     <b>Vistas: far-away features for rotation aiding and autonomous flight.</b>
     Distant features (&ldquo;vistas&rdquo;) barely translate in the image, making them ideal for
     estimating rotation and for steering straight flight. Our ARDrone flew autonomously
-    down a hallway and through a narrow door using vistas alone (FUSION 2012).
+    down a hallway and through a narrow door using vistas alone (<a href="https://dellaert.github.io/files/Beall12fusion.pdf">FUSION 2012</a>).
     <span class="meta">Videos:
       <a href="Site/Media/AutoFlight1.m4v">first autonomous flight</a> &middot;
       <a href="Site/Media/AutoFlight2.m4v">full flight with assisted turns</a> &middot;
@@ -237,7 +237,7 @@
     With Kyel Ok, I used intersections between vertical edges and wall-floor
     boundary lines &mdash; detected with steerable filters &mdash; to infer wall structure that
     sparse point features cannot provide, enabling the drone&rsquo;s first fully autonomous
-    turns indoors (IROS workshop 2012; RAS journal 2014).
+    turns indoors (<a href="https://dellaert.github.io/files/Ok12vicomor.pdf">IROS workshop 2012</a>; <a href="https://dellaert.github.io/files/Ta14ras.pdf">RAS journal 2014</a>).
     <span class="meta">Videos:
       <a href="Site/Media/steerableFilter_edge.mov">feature detection</a> &middot;
       <a href="Site/Media/AutoTurn1.m4v">first autonomous turn</a></span>
@@ -248,7 +248,7 @@
     PTAM-style systems fail on forward-moving robots with a single frontal camera: too
     few corner features, and too little motion parallax to triangulate a map. Fusing
     odometry into a parallel tracking-and-mapping framework kept localization real-time
-    while a slower thread inferred wall structure (IROS workshop 2013; RAS 2014).
+    while a slower thread inferred wall structure (IROS workshop 2013; <a href="https://dellaert.github.io/files/Ta14ras.pdf">RAS 2014</a>).
     <span class="meta">Videos:
       <a href="Site/Media/Duy-13-04-10-firstTurn-1.mov">first turn</a> &middot;
       <a href="Site/Media/Duy-13-04-10-cleanTurn-1.mov">clean turn</a></span>
@@ -269,7 +269,7 @@
     A bio-inspired two-part vision system for an ARDrone in the wild: a peripheral
     system picks out motion-salient nearby objects via optical-flow subspace methods
     (by Richard Roberts), and a foveal system tracks the detected tree trunks with
-    model-based edge tracking (SPIE 2012).
+    model-based edge tracking (<a href="https://dellaert.github.io/files/Roberts12spie.pdf">SPIE 2012</a>).
     <span class="meta">Video:
       <a href="Site/Media/Duy-Richard-11-04-21-1_cut.mov">tree detection and tracking</a></span>
   </div>
@@ -280,8 +280,8 @@
     <b>SURFTrac: continuous tracking and recognition for outdoor AR.</b>
     A lightweight method that matches SURF features against a database of geo-tagged,
     labeled images once, then tracks them locally frame-to-frame &mdash; fast enough to
-    label buildings live on a Nokia N95 at 8&ndash;12&nbsp;fps (CVPR 2009 oral, 5% acceptance;
-    demos at ISMAR&rsquo;08 and CVPR&rsquo;09; US patent).
+    label buildings live on a Nokia N95 at 8&ndash;12&nbsp;fps (<a href="https://doi.org/10.1109/CVPR.2009.5206831">CVPR 2009 oral</a>, 5% acceptance;
+    demos at ISMAR&rsquo;08 and CVPR&rsquo;09; <a href="https://www.freepatentsonline.com/8818024.html">US patent</a>).
     <span class="meta">Video: <a href="https://www.youtube.com/watch?v=wRJTikAjRUo">SURFTrac</a></span>
   </div>
 
@@ -303,7 +303,7 @@
   <div class="past-entry">
     <b>Art of Defense: a collaborative handheld AR board game.</b>
     A tabletop tower-defense game where players cooperate through camera phones, blending
-    physical game pieces with virtual gameplay (ACM SIGGRAPH Symposium on Video Games 2009).
+    physical game pieces with virtual gameplay (<a href="https://doi.org/10.1145/1581073.1581095">ACM SIGGRAPH Symposium on Video Games 2009</a>).
     <span class="meta">Videos:
       <a href="https://www.youtube.com/watch?v=hSUuvgklsZw">SIGGRAPH 2009</a> &middot;
       <a href="https://www.youtube.com/watch?v=sR_plHtkZ-Q">version 1</a> &middot;
@@ -325,7 +325,7 @@
     My Master&rsquo;s thesis at NUS: a live 3D human-capture system using 12 cameras in a
     green room and a fast shape-from-silhouette algorithm, letting players see miniature
     3D copies of themselves interact with virtual characters on an AR tabletop
-    (TVCG 2005; exhibited at Singapore Science Center, SIGCHI&rsquo;05, and WIRED NextFest&rsquo;05).
+    (<a href="https://doi.org/10.1109/TVCG.2005.105">TVCG 2005</a>; exhibited at Singapore Science Center, SIGCHI&rsquo;05, and WIRED NextFest&rsquo;05).
     <span class="meta">Video: <a href="Site/Media/MagicLand%28web%29-1.mov">Magic Land</a></span>
   </div>
 
@@ -383,37 +383,37 @@
       <span class="venue-name">RSS 2022 Workshop on Implicit Representations for Robotic Manipulation</span>. <a href="https://arxiv.org/abs/2207.05824">arXiv</a></li>
     <li><span class="title">Fast Nonlinear Approximation of Pose Graph Node Marginalization</span><br>
       <span class="me">D.N. Ta</span>, N. Banerjee, S. Eick, E. Pittore, S. Lenser.
-      <span class="venue-name">ICRA</span>, 2018.</li>
+      <span class="venue-name">ICRA</span>, 2018. <a href="https://doi.org/10.1109/ICRA.2018.8460979">DOI</a></li>
     <li><span class="title">Differential Dynamic Programming for Optimal Estimation</span><br>
       M. Kobilarov, <span class="me">D.N. Ta</span>, F. Dellaert.
-      <span class="venue-name">ICRA</span>, 2015.</li>
+      <span class="venue-name">ICRA</span>, 2015. <a href="https://dellaert.github.io/files/Kobilarov15icra.pdf">PDF</a></li>
     <li><span class="title">Linear-Time Estimation with Tree Assumed Density Filtering and Low-Rank Approximation</span><br>
       <span class="me">D.N. Ta</span>, F. Dellaert.
-      <span class="venue-name">IROS</span>, 2014.</li>
+      <span class="venue-name">IROS</span>, 2014. <a href="https://dellaert.github.io/files/Ta14iros.pdf">PDF</a></li>
     <li><span class="title">A Factor Graph Approach to Estimation and Model Predictive Control on Unmanned Aerial Vehicles</span><br>
       <span class="me">D.N. Ta</span>, M. Kobilarov, F. Dellaert.
-      <span class="venue-name">ICUAS</span>, 2014.</li>
+      <span class="venue-name">ICUAS</span>, 2014. <a href="https://dellaert.github.io/files/Ta14icuas.pdf">PDF</a></li>
     <li><span class="title">Vistas and Parallel Tracking and Mapping with Wall-Floor Features: Enabling Autonomous Flight in Man-made Environments</span><br>
       <span class="me">D.N. Ta</span>, K. Ok, F. Dellaert.
-      <span class="venue-name">Robotics and Autonomous Systems</span>, 2014.</li>
+      <span class="venue-name">Robotics and Autonomous Systems</span>, 2014. <a href="https://dellaert.github.io/files/Ta14ras.pdf">PDF</a></li>
     <li><span class="title">Monocular Parallel Tracking and Mapping with Odometry Fusion for MAV Navigation in Feature-Lacking Environments</span><br>
       <span class="me">D.N. Ta</span>, K. Ok, F. Dellaert.
       <span class="venue-name">IROS&rsquo;13 Workshop on Vision-based Closed-Loop Control and Navigation of Micro Helicopters in GPS-denied Environments</span>, 2013.</li>
     <li><span class="title">Saliency Detection and Model-based Tracking: A Two-Part Vision System for Small Robot Navigation in Forested Environments</span><br>
       R. Roberts, <span class="me">D.N. Ta</span>, J. Straub, F. Dellaert.
-      <span class="venue-name">SPIE Defense, Security, and Sensing</span>, 2012.</li>
+      <span class="venue-name">SPIE Defense, Security, and Sensing</span>, 2012. <a href="https://dellaert.github.io/files/Roberts12spie.pdf">PDF</a></li>
     <li><span class="title">Attitude Heading Reference System with Rotation-Aiding Visual Landmarks</span><br>
       C. Beall, <span class="me">D.N. Ta</span>, K. Ok, F. Dellaert.
-      <span class="venue-name">FUSION</span>, 2012.</li>
+      <span class="venue-name">FUSION</span>, 2012. <a href="https://dellaert.github.io/files/Beall12fusion.pdf">PDF</a></li>
     <li><span class="title">Vistas and Wall-Floor Intersection Features: Enabling Autonomous Flight in Man-made Environments</span><br>
       K. Ok, <span class="me">D.N. Ta</span>, F. Dellaert.
-      <span class="venue-name">IROS Workshop on Visual Control of Mobile Robots</span>, 2012.</li>
+      <span class="venue-name">IROS Workshop on Visual Control of Mobile Robots</span>, 2012. <a href="https://dellaert.github.io/files/Ok12vicomor.pdf">PDF</a></li>
     <li><span class="title">SURFTrac: Efficient Tracking and Continuous Object Recognition Using Local Feature Descriptors</span><br>
       <span class="me">D.N. Ta</span>, W.C. Chen, N. Gelfand, K. Pulli.
-      <span class="venue-name">CVPR</span>, 2009. <i>(Oral, 5% acceptance rate)</i></li>
+      <span class="venue-name">CVPR</span>, 2009. <i>(Oral, 5% acceptance rate)</i> <a href="https://doi.org/10.1109/CVPR.2009.5206831">DOI</a></li>
     <li><span class="title">Art of Defense: A Collaborative Handheld Augmented Reality Board Game</span><br>
       <span class="me">D.N. Ta</span>, K. Raveendran, Y. Xu, K. Spreen, B. MacIntyre.
-      <span class="venue-name">ACM SIGGRAPH Symposium on Video Games</span>, 2009.</li>
+      <span class="venue-name">ACM SIGGRAPH Symposium on Video Games</span>, 2009. <a href="https://doi.org/10.1145/1581073.1581095">DOI</a></li>
     <li><span class="title">Free Network Visible Network</span><br>
       C. Boj, D. Diaz, <span class="me">D.N. Ta</span>, W. Liu, A.D. Cheok.
       <span class="venue-name">ISEA06</span>, 2006.</li>
@@ -425,7 +425,7 @@
       <span class="venue-name">ACM Computers in Entertainment</span>, 2006.</li>
     <li><span class="title">Real Time 3D Human Capture System for Mixed-Reality Art and Entertainment</span><br>
       <span class="me">D.N. Ta</span>, Q.T.C. Tran, K. Xu, A.D. Cheok, et al.
-      <span class="venue-name">IEEE Transactions on Visualization and Computer Graphics</span>, 2005.</li>
+      <span class="venue-name">IEEE Transactions on Visualization and Computer Graphics</span>, 2005. <a href="https://doi.org/10.1109/TVCG.2005.105">DOI</a></li>
     <li><span class="title">Magic Land: A 3D Human Capture Mixed Reality System for Museum Experiences</span><br>
       Q.T.C. Tran, <span class="me">D.N. Ta</span>, A.D. Cheok, et al.
       <span class="venue-name">Int&rsquo;l Workshop: Re-Thinking Technology in Museums</span>, 2005.</li>
