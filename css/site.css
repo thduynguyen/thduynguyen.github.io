@@ -185,3 +185,16 @@ footer {
   .news li { grid-template-columns: 1fr; gap: 0; }
   .hero h1 { font-size: 1.7rem; }
 }
+
+/* Portrait */
+.hero .portrait {
+  float: right;
+  width: 10rem;
+  max-width: 38%;
+  border-radius: 0.9rem;
+  margin: 0.5rem 0 1rem 1.5rem;
+  border: 1px solid var(--border);
+}
+@media (max-width: 600px) {
+  .hero .portrait { float: none; display: block; margin: 0 auto 1rem; }
+}
