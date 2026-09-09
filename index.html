@@ -40,7 +40,7 @@
   <p>
     Before RAI, I spent five years at <a href="https://www.tri.global">Toyota Research
     Institute</a> working on perception for dexterous manipulation, led perception at
-    Outrider, and built SLAM systems at iRobot that shipped on the Roomba&nbsp;980.
+    Outrider, and built the visual SLAM backend that shipped on the iRobot Roomba&nbsp;980.
     I received my Ph.D. from Georgia Tech, where I worked with
     Prof.&nbsp;<a href="https://dellaert.github.io">Frank Dellaert</a> on factor-graph
     methods that unify perception and optimal control for autonomous flight. In an
@@ -173,6 +173,33 @@
 
 <section id="past">
   <h2>Earlier Work</h2>
+
+  <h3>Industry Research &mdash; Toyota Research Institute &amp; iRobot (2015&ndash;2022)</h3>
+
+  <div class="past-entry">
+    <b>Conditional energy-based models for implicit policies.</b>
+    My last project at TRI, with Russ Tedrake&rsquo;s dexterous manipulation team
+    (Siyuan Feng, Eric Cousineau &mdash; the group that has since spun out as Walden
+    Robotics): a deep dive into why implicit, energy-based behavior-cloning policies
+    are so hard to train in practice. Many failed experiments later, we documented the
+    gap between EBM theory and practice (RSS 2022 workshop). That same summer,
+    Diffusion Policy &mdash; the landmark work of Cheng Chi, then a TRI intern from
+    Columbia &mdash; showed how denoising diffusion sidesteps exactly these training
+    pathologies. This work is what pulled me toward imitation learning and diffusion
+    policies today.
+    <span class="meta"><a href="https://arxiv.org/abs/2207.05824">arXiv</a></span>
+  </div>
+
+  <div class="past-entry">
+    <b>Fast nonlinear approximation of pose graph node marginalization.</b>
+    Lifelong mapping on a consumer robot means the pose graph grows without bound, and
+    marginalizing old nodes creates dense, expensive cliques. At iRobot I developed a
+    fast, near-optimal nonlinear approximation for node marginalization and edge
+    sparsification &mdash; keeping long-term graph SLAM tractable on small embedded
+    devices like the Roomba&rsquo;s (ICRA 2018).
+    <span class="meta">Video:
+      <a href="https://www.youtube.com/watch?v=yOQ3Rb64h0E">ICRA 2018 spotlight</a></span>
+  </div>
 
   <h3>Autonomous Flight &mdash; Georgia Tech (2011&ndash;2014)</h3>
   <p class="section-note">Perception and optimal control for autonomous navigation on micro aerial vehicles, with Prof. Frank Dellaert.</p>
