@@ -187,14 +187,22 @@ footer {
 }
 
 /* Portrait */
+.hero-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem 2.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.8rem;
+}
+.hero-top .tagline { margin-bottom: 0; }
 .hero .portrait {
-  float: right;
-  width: 10rem;
-  max-width: 38%;
-  border-radius: 0.9rem;
-  margin: 0.5rem 0 1rem 1.5rem;
+  width: 9.5rem;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
   border: 1px solid var(--border);
 }
 @media (max-width: 600px) {
-  .hero .portrait { float: none; display: block; margin: 0 auto 1rem; }
+  .hero-top { justify-content: center; text-align: center; }
 }
