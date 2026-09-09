@@ -73,8 +73,8 @@
 </section>
 
 <section id="projects">
-  <h2>Recent Projects</h2>
-  <p class="section-note">Whole-body loco-manipulation, robot learning, and the infrastructure behind them, at the Robotics &amp; AI Institute.</p>
+  <h2>Selected Projects</h2>
+  <p class="section-note">Whole-body loco-manipulation and robot learning at the Robotics &amp; AI Institute, plus favorite first-author work from earlier chapters.</p>
   <div class="cards">
 
     <div class="card">
@@ -128,42 +128,45 @@
 
     <div class="card">
       <div class="body">
-        <div class="venue">ICRA 2026</div>
-        <h3>NovaFlow: Zero-Shot Manipulation</h3>
-        <p>A video-generation model imagines the task; off-the-shelf perception distills
-        the generated video into 3D actionable object flow; the robot executes &mdash; no
-        demonstrations, no embodiment-specific training. Validated on a Franka arm and
-        Spot for rigid, articulated, and deformable objects.</p>
+        <div class="venue">RSS 2022 Workshop</div>
+        <h3>Conditional EBMs for Implicit Policies</h3>
+        <p>Why are implicit, energy-based behavior-cloning policies so hard to train?
+        My last project at TRI, with Russ Tedrake&rsquo;s team (since spun out as Walden
+        Robotics), documented the gap between EBM theory and practice through many
+        failed experiments &mdash; the very training pathologies that Diffusion Policy,
+        born at TRI that same summer, sidesteps with denoising diffusion.</p>
         <div class="tags">
-          <a href="https://novaflow.lhy.xyz/">Project</a>
-          <a href="https://arxiv.org/abs/2510.08568">arXiv</a>
-          <a href="https://github.com/rai-opensource/NovaFlow">Code</a>
+          <a href="https://arxiv.org/abs/2207.05824">arXiv</a>
         </div>
       </div>
     </div>
 
     <div class="card">
       <div class="body">
-        <div class="venue">CVPR 2025</div>
-        <h3>ASHiTA: Scene-Grounded Task Analysis</h3>
-        <p>The first framework to automatically decompose high-level tasks into detailed
-        subtasks grounded in a 3D scene graph &mdash; hierarchical task analysis directly from
-        a scene, connecting task planning with real-world spatial structure.</p>
+        <div class="venue">ICRA 2018</div>
+        <h3>Pose-Graph Sparsification for Lifelong SLAM</h3>
+        <p>Lifelong mapping on a consumer robot means the pose graph grows without
+        bound, and marginalizing old nodes creates dense, expensive cliques. This
+        fast, near-optimal nonlinear approximation of node marginalization and edge
+        sparsification keeps long-term graph SLAM tractable on tiny embedded
+        processors like the Roomba&rsquo;s.</p>
         <div class="tags">
-          <a href="https://arxiv.org/abs/2504.06553">arXiv</a>
+          <a href="https://doi.org/10.1109/ICRA.2018.8460979">Paper</a>
+          <a href="https://www.youtube.com/watch?v=yOQ3Rb64h0E">Video</a>
         </div>
       </div>
     </div>
 
     <div class="card">
       <div class="body">
-        <div class="venue">Preprint</div>
-        <h3>Zero-Shot Object-Centric Instruction Following</h3>
-        <p>Integrating foundation models with traditional SLAM-based navigation for
-        object-centric instruction following on real robots &mdash; language grounding without
-        task-specific training.</p>
+        <div class="venue">ICUAS 2014</div>
+        <h3>SQP on Factor Graphs: Estimation Meets Control</h3>
+        <p>Extending factor graphs from estimation to constrained optimal control:
+        system dynamics, discretized by integration on Lie-group manifolds, enter the
+        graph as hard constrained factors, and an SQP formulation solves the result
+        &mdash; revealing an elegant duality between primal and dual factor graphs.</p>
         <div class="tags">
-          <a href="https://arxiv.org/abs/2411.07848">arXiv</a>
+          <a href="https://dellaert.github.io/files/Ta14icuas.pdf">Paper</a>
         </div>
       </div>
     </div>
@@ -173,33 +176,6 @@
 
 <section id="past">
   <h2>Earlier Work</h2>
-
-  <h3>Industry Research &mdash; Toyota Research Institute &amp; iRobot (2015&ndash;2022)</h3>
-
-  <div class="past-entry">
-    <b>Conditional energy-based models for implicit policies.</b>
-    My last project at TRI, with Russ Tedrake&rsquo;s dexterous manipulation team
-    (Siyuan Feng, Eric Cousineau &mdash; the group that has since spun out as Walden
-    Robotics): a deep dive into why implicit, energy-based behavior-cloning policies
-    are so hard to train in practice. Many failed experiments later, we documented the
-    gap between EBM theory and practice (<a href="https://arxiv.org/abs/2207.05824">RSS 2022 workshop</a>). That same summer,
-    Diffusion Policy &mdash; the landmark work of Cheng Chi, then a TRI intern from
-    Columbia &mdash; showed how denoising diffusion sidesteps exactly these training
-    pathologies. This work is what pulled me toward imitation learning and diffusion
-    policies today.
-    <span class="meta"><a href="https://arxiv.org/abs/2207.05824">arXiv</a></span>
-  </div>
-
-  <div class="past-entry">
-    <b>Fast nonlinear approximation of pose graph node marginalization.</b>
-    Lifelong mapping on a consumer robot means the pose graph grows without bound, and
-    marginalizing old nodes creates dense, expensive cliques. At iRobot I developed a
-    fast, near-optimal nonlinear approximation for node marginalization and edge
-    sparsification &mdash; keeping long-term graph SLAM tractable on small embedded
-    devices like the Roomba&rsquo;s (<a href="https://doi.org/10.1109/ICRA.2018.8460979">ICRA 2018</a>).
-    <span class="meta">Video:
-      <a href="https://www.youtube.com/watch?v=yOQ3Rb64h0E">ICRA 2018 spotlight</a></span>
-  </div>
 
   <h3>Autonomous Flight &mdash; Georgia Tech (2011&ndash;2014)</h3>
   <p class="section-note">Perception and optimal control for autonomous navigation on micro aerial vehicles, with Prof. Frank Dellaert.</p>
