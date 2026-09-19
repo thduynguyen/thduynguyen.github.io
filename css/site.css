@@ -148,9 +148,41 @@ h3 { font-size: 1.12rem; margin: 1.6rem 0 0.4rem; }
 }
 
 /* Past projects */
-.past-entry { margin-bottom: 1.1rem; }
+.past-entry {
+  display: flex;
+  gap: 1.3rem;
+  align-items: flex-start;
+  margin-bottom: 1.4rem;
+}
+.past-entry .thumb { flex: 0 0 12rem; }
+.past-entry .thumb img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.45rem;
+  border: 1px solid var(--border);
+}
+.past-entry .pbody { flex: 1; }
 .past-entry b { color: var(--text); }
 .past-entry .meta { color: var(--text-soft); font-size: 0.88rem; }
+@media (max-width: 640px) {
+  .past-entry { flex-direction: column; gap: 0.6rem; }
+  .past-entry .thumb { flex: none; width: 100%; max-width: 16rem; }
+}
+
+.expand-btn {
+  display: block;
+  margin: 2rem auto 0.5rem;
+  padding: 0.5rem 1.4rem;
+  font: inherit;
+  font-size: 0.95rem;
+  color: var(--text-soft);
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.expand-btn:hover { color: var(--accent); border-color: var(--accent); }
 
 /* Publications */
 .pubs { list-style: none; padding-left: 0; counter-reset: pub 25; }

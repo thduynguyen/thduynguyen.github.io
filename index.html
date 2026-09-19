@@ -222,6 +222,8 @@
   <p class="section-note">Perception and optimal control for autonomous navigation on micro aerial vehicles, with Prof. Frank Dellaert.</p>
 
   <div class="past-entry">
+    <a class="thumb" href="https://dellaert.github.io/files/Ta14icuas.pdf"><img src="img/icuas-teaser.jpg" alt="A nonlinear constrained factor graph with its SQP primal and dual linear graphs" loading="lazy"></a>
+    <div class="pbody">
     <b>Factor graphs for estimation and model-predictive control.</b>
     We extended factor graphs from estimation to deterministic optimal control:
     dynamics constraints are discretized via integration on Lie-group manifolds and
@@ -229,16 +231,22 @@
     elegant connection between primal and dual factor graphs (<a href="https://dellaert.github.io/files/Ta14icuas.pdf">ICUAS 2014</a>, with
     Prof. Marin Kobilarov). A companion line of work derived differential dynamic
     programming for optimal estimation (<a href="https://dellaert.github.io/files/Kobilarov15icra.pdf">ICRA 2015</a>).
+    </div>
   </div>
 
   <div class="past-entry">
+    <a class="thumb" href="https://dellaert.github.io/files/Ta14iros.pdf"><img src="img/iros14-teaser.jpg" alt="Tree filtering scheme: marginalizing out the pose without creating a dense landmark clique" loading="lazy"></a>
+    <div class="pbody">
     <b>Linear-time SLAM with incremental tree filtering.</b>
     My thesis work explored object-centric approaches to fast estimation, leading to
     linear-time approximation algorithms for information-filtering SLAM &mdash; a problem
     that is traditionally cubic in the number of features (<a href="https://dellaert.github.io/files/Ta14iros.pdf">IROS 2014</a>).
+    </div>
   </div>
 
   <div class="past-entry">
+    <a class="thumb" href="https://www.youtube.com/watch?v=sJUC_fcrwgw"><img src="https://i.ytimg.com/vi/sJUC_fcrwgw/mqdefault.jpg" alt="ARDrone flying autonomously down a hallway using vista features" loading="lazy"></a>
+    <div class="pbody">
     <b>Vistas: far-away features for rotation aiding and autonomous flight.</b>
     Distant features (&ldquo;vistas&rdquo;) barely translate in the image, making them ideal for
     estimating rotation and for steering straight flight. Our ARDrone flew autonomously
@@ -247,9 +255,12 @@
       <a href="https://www.youtube.com/watch?v=sJUC_fcrwgw">first autonomous flight</a> &middot;
       <a href="https://www.youtube.com/watch?v=wurclMEIC34">full flight</a> &middot;
       <a href="https://www.youtube.com/watch?v=1gbmsiQdBhQ">vista detection</a></span>
+    </div>
   </div>
 
   <div class="past-entry">
+    <a class="thumb" href="https://www.youtube.com/watch?v=R3Kr73c7AHY"><img src="https://i.ytimg.com/vi/R3Kr73c7AHY/mqdefault.jpg" alt="Wall-floor boundary features detected in a corridor" loading="lazy"></a>
+    <div class="pbody">
     <b>Wall-floor features for lateral collision avoidance.</b>
     With Kyel Ok, I used intersections between vertical edges and wall-floor
     boundary lines &mdash; detected with steerable filters &mdash; to infer wall structure that
@@ -258,9 +269,12 @@
     <span class="meta">Videos:
       <a href="https://www.youtube.com/watch?v=R3Kr73c7AHY">feature detection</a> &middot;
       <a href="https://www.youtube.com/watch?v=sL8qutUurN0">first autonomous turn</a></span>
+    </div>
   </div>
 
   <div class="past-entry">
+    <a class="thumb" href="https://www.youtube.com/watch?v=EbqYsgZKNFg"><img src="https://i.ytimg.com/vi/EbqYsgZKNFg/mqdefault.jpg" alt="Monocular PTAM with odometry fusion: first autonomous turn" loading="lazy"></a>
+    <div class="pbody">
     <b>Monocular parallel tracking and mapping with odometry fusion.</b>
     PTAM-style systems fail on forward-moving robots with a single frontal camera: too
     few corner features, and too little motion parallax to triangulate a map. Fusing
@@ -269,9 +283,12 @@
     <span class="meta">Videos:
       <a href="https://www.youtube.com/watch?v=EbqYsgZKNFg">first turn</a> &middot;
       <a href="https://www.youtube.com/watch?v=Do3hiVrTHxE">clean turn</a></span>
+    </div>
   </div>
 
   <div class="past-entry">
+    <a class="thumb" href="https://www.youtube.com/watch?v=p2_o6IK66WM"><img src="https://i.ytimg.com/vi/p2_o6IK66WM/mqdefault.jpg" alt="Edge-based monocular SLAM in a bare corridor" loading="lazy"></a>
+    <div class="pbody">
     <b>MonoSLAM in feature-poor corridors.</b>
     Corner-feature SLAM breaks down in bare hallways, so I built a monocular SLAM
     system on vertical edges, with EM for data association and inverse-depth
@@ -279,9 +296,12 @@
     <span class="meta">Videos:
       <a href="https://www.youtube.com/watch?v=p2_o6IK66WM">edge-based SLAM</a> &middot;
       <a href="https://www.youtube.com/watch?v=uwXK6DAoW1o">with height estimation</a></span>
+    </div>
   </div>
 
   <div class="past-entry">
+    <a class="thumb" href="https://www.youtube.com/watch?v=AlP4SL98S_4"><img src="https://i.ytimg.com/vi/AlP4SL98S_4/mqdefault.jpg" alt="Tree trunk detection and tracking from a drone in a forest" loading="lazy"></a>
+    <div class="pbody">
     <b>Flying through a forest.</b>
     A bio-inspired two-part vision system for an ARDrone in the wild: a peripheral
     system picks out motion-salient nearby objects via optical-flow subspace methods
@@ -289,35 +309,51 @@
     model-based edge tracking (<a href="https://dellaert.github.io/files/Roberts12spie.pdf">SPIE 2012</a>).
     <span class="meta">Video:
       <a href="https://www.youtube.com/watch?v=AlP4SL98S_4">tree detection and tracking</a></span>
+    </div>
   </div>
+
+  <button id="ar-toggle" class="expand-btn" onclick="toggleAR()">Before robotics: augmented &amp; mixed reality (2003&ndash;2010)&ensp;&#9662;</button>
+
+  <div id="ar-work" hidden>
 
   <h3>Mobile Augmented Reality &mdash; Georgia Tech &amp; Nokia Research (2007&ndash;2010)</h3>
 
   <div class="past-entry">
+    <a class="thumb" href="https://www.youtube.com/watch?v=wRJTikAjRUo"><img src="https://i.ytimg.com/vi/wRJTikAjRUo/mqdefault.jpg" alt="SURFTrac labeling buildings live on a Nokia N95" loading="lazy"></a>
+    <div class="pbody">
     <b>SURFTrac: continuous tracking and recognition for outdoor AR.</b>
     A lightweight method that matches SURF features against a database of geo-tagged,
     labeled images once, then tracks them locally frame-to-frame &mdash; fast enough to
     label buildings live on a Nokia N95 at 8&ndash;12&nbsp;fps (<a href="https://doi.org/10.1109/CVPR.2009.5206831">CVPR 2009 oral</a>, 5% acceptance;
     demos at ISMAR&rsquo;08 and CVPR&rsquo;09; <a href="https://www.freepatentsonline.com/8818024.html">US patent</a>).
     <span class="meta">Video: <a href="https://www.youtube.com/watch?v=wRJTikAjRUo">SURFTrac</a></span>
+    </div>
   </div>
 
   <div class="past-entry">
+    <a class="thumb" href="https://www.youtube.com/watch?v=Z1CZ5DoAiSU"><img src="https://i.ytimg.com/vi/Z1CZ5DoAiSU/mqdefault.jpg" alt="SURFTrac3D pinning virtual 3D content on real buildings" loading="lazy"></a>
+    <div class="pbody">
     <b>SURFTrac3D: full 6-DoF outdoor tracking.</b>
     Extending SURFTrac to 3D: a feature database reconstructed with structure-from-motion
     provides the map, RANSAC initializes the camera pose, and SURFTrac keeps the pose
     updated across frames &mdash; stable enough to pin virtual 3D content on real buildings.
     <span class="meta">Video: <a href="https://www.youtube.com/watch?v=Z1CZ5DoAiSU">SURFTrac3D</a></span>
+    </div>
   </div>
 
   <div class="past-entry">
+    <a class="thumb" href="https://www.youtube.com/watch?v=45MtXe79_wY"><img src="https://i.ytimg.com/vi/45MtXe79_wY/mqdefault.jpg" alt="Template patch tracking on the Nokia N900" loading="lazy"></a>
+    <div class="pbody">
     <b>Template-based tracking for handheld AR.</b>
     A PTAM-inspired template tracker for the Nokia N900, with performance comparable to
     the tracker that later grew into Qualcomm&rsquo;s Vuforia.
     <span class="meta">Video: <a href="https://www.youtube.com/watch?v=45MtXe79_wY">patch tracking</a></span>
+    </div>
   </div>
 
   <div class="past-entry">
+    <a class="thumb" href="https://www.youtube.com/watch?v=hSUuvgklsZw"><img src="https://i.ytimg.com/vi/hSUuvgklsZw/mqdefault.jpg" alt="Art of Defense collaborative handheld AR board game" loading="lazy"></a>
+    <div class="pbody">
     <b>Art of Defense: a collaborative handheld AR board game.</b>
     A tabletop tower-defense game where players cooperate through camera phones, blending
     physical game pieces with virtual gameplay (<a href="https://doi.org/10.1145/1581073.1581095">ACM SIGGRAPH Symposium on Video Games 2009</a>).
@@ -325,56 +361,77 @@
       <a href="https://www.youtube.com/watch?v=hSUuvgklsZw">SIGGRAPH 2009</a> &middot;
       <a href="https://www.youtube.com/watch?v=sR_plHtkZ-Q">version 1</a> &middot;
       <a href="https://vimeo.com/1766417">ISMAR&rsquo;08 demo</a></span>
+    </div>
   </div>
 
   <div class="past-entry">
+    <a class="thumb" href="https://www.youtube.com/watch?v=3nugeIPLppw"><img src="https://i.ytimg.com/vi/3nugeIPLppw/mqdefault.jpg" alt="Real-time model-based edge tracking of a Lego structure" loading="lazy"></a>
+    <div class="pbody">
     <b>Lego edge tracking.</b>
     With Yong-Dian Jian: real-time model-based edge tracking of textureless Lego
     structures, where point features fail. After experiments with particle filters,
     the stable solution was classic Gauss-Newton least squares &mdash; plus many small tricks.
     <span class="meta">Video: <a href="https://www.youtube.com/watch?v=3nugeIPLppw">edge tracking</a></span>
+    </div>
   </div>
 
   <h3>Mixed-Reality Art &amp; Entertainment &mdash; Singapore (2003&ndash;2007)</h3>
 
   <div class="past-entry">
+    <a class="thumb" href="https://www.youtube.com/watch?v=zY4FaLrjFAs"><img src="https://i.ytimg.com/vi/zY4FaLrjFAs/mqdefault.jpg" alt="Magic Land: miniature live-captured 3D humans on an AR tabletop" loading="lazy"></a>
+    <div class="pbody">
     <b>Magic Land.</b>
     My Master&rsquo;s thesis at NUS: a live 3D human-capture system using 12 cameras in a
     green room and a fast shape-from-silhouette algorithm, letting players see miniature
     3D copies of themselves interact with virtual characters on an AR tabletop
     (<a href="https://doi.org/10.1109/TVCG.2005.105">TVCG 2005</a>; exhibited at Singapore Science Center, SIGCHI&rsquo;05, and WIRED NextFest&rsquo;05).
     <span class="meta">Video: <a href="https://www.youtube.com/watch?v=zY4FaLrjFAs">Magic Land</a></span>
+    </div>
   </div>
 
   <div class="past-entry">
+    <span class="thumb"><img src="img/periphery-teaser.jpg" alt="Visitors pointing at the Periphery installation revealing the artist-drawn past" loading="lazy"></span>
+    <div class="pbody">
     <b>Periphery.</b>
     An interactive art installation using two infrared cameras to track visitors and
     their hands: approaching the board dissolves a live-captured modern scene into the
     forest it once was; pointing reveals the artist-drawn past along the visitor&rsquo;s
     fingertip (2nd International Art and Science Exhibition, Tsinghua University, 2006).
+    </div>
   </div>
 
   <div class="past-entry">
+    <span class="thumb"><img src="img/ultimate-teaser.jpg" alt="Ultimate Commodity on stage at the Esplanade Theater with projected faces" loading="lazy"></span>
+    <div class="pbody">
     <b>Ultimate Commodity.</b>
     One of the few traditional theater performances to use AR on stage: in a dystopian
     Singaporean story where everyone&rsquo;s face becomes identical, we replaced actors&rsquo; heads
     with a virtual model of the mother&rsquo;s head, live during the performance
     (Esplanade Theater, Singapore 2006; Fringe Festival, Toronto 2007).
+    </div>
   </div>
 
   <div class="past-entry">
+    <span class="thumb"><img src="img/fnvn-teaser.jpg" alt="Free Network Visible Network: virtual boxes and donuts flying over a cityscape" loading="lazy"></span>
+    <div class="pbody">
     <b>Free Network Visible Network.</b>
     With artists Clara Boj and Diego Diaz: wireless access points become AR markers, and
     the invisible network traffic between them is visualized as translucent boxes and
     donuts flying through the air (ISEA06 ZERO ONE, San Jose).
+    </div>
   </div>
 
   <div class="past-entry">
+    <a class="thumb" href="https://www.youtube.com/watch?v=wyOZKRaNZbA"><img src="https://i.ytimg.com/vi/wyOZKRaNZbA/mqdefault.jpg" alt="Poultry Internet demonstrated live on Good Morning America" loading="lazy"></a>
+    <div class="pbody">
     <b>And more.</b>
     The vision-tracking component of Poultry Internet, demonstrated live on
     <a href="https://www.youtube.com/watch?v=wyOZKRaNZbA">Good Morning America</a>;
     Age Invaders (SIGCHI&rsquo;06); and Fragile!, an interactive media-art installation.
+    </div>
   </div>
+
+  </div><!-- /ar-work -->
 </section>
 
 <section id="publications">
@@ -477,6 +534,17 @@
     <p>&copy; 2026 Duy-Nguyen Ta &middot; Last updated September 2026</p>
   </div>
 </footer>
+
+<script>
+function toggleAR() {
+  var s = document.getElementById('ar-work');
+  var b = document.getElementById('ar-toggle');
+  s.hidden = !s.hidden;
+  b.innerHTML = s.hidden
+    ? 'Before robotics: augmented &amp; mixed reality (2003&ndash;2010)&ensp;&#9662;'
+    : 'Hide augmented &amp; mixed reality work&ensp;&#9652;';
+}
+</script>
 
 </body>
 </html>
