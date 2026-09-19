@@ -181,10 +181,11 @@ h3 { font-size: 1.12rem; margin: 1.6rem 0 0.4rem; }
 .expand-btn {
   display: block;
   margin: 2rem auto 0.5rem;
-  padding: 0.5rem 1.4rem;
+  padding: 0.7rem 1.8rem;
   font: inherit;
-  font-size: 0.95rem;
-  color: var(--text-soft);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text);
   background: none;
   border: 1px solid var(--border);
   border-radius: 2rem;
