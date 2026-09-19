@@ -63,6 +63,7 @@ header .wrap {
   gap: 0.5rem 1.5rem;
 }
 .site-name { font-weight: 700; font-size: 1.15rem; color: var(--text); }
+a.site-name:hover { color: var(--accent); text-decoration: none; }
 nav { display: flex; flex-wrap: wrap; gap: 1.1rem; font-size: 0.95rem; }
 nav a { color: var(--text-soft); }
 nav a:hover { color: var(--accent); text-decoration: none; }
