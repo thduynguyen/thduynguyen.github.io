@@ -6,7 +6,7 @@
 <title>Duy-Nguyen Ta — Roboticist</title>
 <meta name="description" content="Duy-Nguyen Ta is a roboticist at the Robotics & AI Institute working on whole-body loco-manipulation, sampling-based MPC, robot learning, SLAM, and perception.">
 <link rel="icon" href="favicon.ico">
-<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/site.css?v=2">
 </head>
 <body>
 
@@ -218,6 +218,12 @@
 <section id="past">
   <h2>Earlier Work</h2>
 
+  <button class="expand-btn" data-target="flight-work"
+    data-show="PhD era: autonomous flight (2011&ndash;2014)&ensp;&#9662;"
+    data-hide="Hide autonomous flight work&ensp;&#9652;">PhD era: autonomous flight (2011&ndash;2014)&ensp;&#9662;</button>
+
+  <div id="flight-work" hidden>
+
   <h3>Autonomous Flight &mdash; Georgia Tech (2011&ndash;2014)</h3>
   <p class="section-note">Perception and optimal control for autonomous navigation on micro aerial vehicles, with Prof. Frank Dellaert.</p>
 
@@ -312,7 +318,11 @@
     </div>
   </div>
 
-  <button id="ar-toggle" class="expand-btn" onclick="toggleAR()">Before robotics: augmented &amp; mixed reality (2003&ndash;2010)&ensp;&#9662;</button>
+  </div><!-- /flight-work -->
+
+  <button class="expand-btn" data-target="ar-work"
+    data-show="Before robotics: augmented &amp; mixed reality (2003&ndash;2010)&ensp;&#9662;"
+    data-hide="Hide augmented &amp; mixed reality work&ensp;&#9652;">Before robotics: augmented &amp; mixed reality (2003&ndash;2010)&ensp;&#9662;</button>
 
   <div id="ar-work" hidden>
 
@@ -536,14 +546,13 @@
 </footer>
 
 <script>
-function toggleAR() {
-  var s = document.getElementById('ar-work');
-  var b = document.getElementById('ar-toggle');
-  s.hidden = !s.hidden;
-  b.innerHTML = s.hidden
-    ? 'Before robotics: augmented &amp; mixed reality (2003&ndash;2010)&ensp;&#9662;'
-    : 'Hide augmented &amp; mixed reality work&ensp;&#9652;';
-}
+document.querySelectorAll('.expand-btn').forEach(function (b) {
+  b.addEventListener('click', function () {
+    var s = document.getElementById(b.dataset.target);
+    s.hidden = !s.hidden;
+    b.textContent = s.hidden ? b.dataset.show : b.dataset.hide;
+  });
+});
 </script>
 
 </body>
