@@ -237,10 +237,19 @@ footer {
   overflow: hidden;
   margin-bottom: 1.1rem;
 }
-.project-row > a:first-child { flex: 0 0 13rem; display: block; }
+.project-row > a:first-child {
+  flex: 0 0 13rem;
+  display: flex;
+  align-items: center;
+  padding: 0.9rem 0 0.9rem 0.9rem;
+}
 .project-row > a:first-child img {
-  width: 100%; height: 100%; object-fit: cover; display: block;
-  border-right: 1px solid var(--border);
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  border-radius: 0.45rem;
+  border: 1px solid var(--border);
 }
 .project-row .body { padding: 0.9rem 1.1rem 1rem; display: flex; flex-direction: column; }
 .project-row h3 { margin: 0 0 0.35rem; font-size: 1.05rem; }
@@ -250,6 +259,5 @@ footer {
 .project-row .tags a { font-size: 0.83rem; background: var(--accent-soft); border-radius: 0.35rem; padding: 0.12rem 0.55rem; }
 @media (max-width: 640px) {
   .project-row { flex-direction: column; }
-  .project-row > a:first-child { flex: none; }
-  .project-row > a:first-child img { aspect-ratio: 16/9; border-right: 0; border-bottom: 1px solid var(--border); }
+  .project-row > a:first-child { flex: none; padding: 0.9rem 0.9rem 0; }
 }
