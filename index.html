@@ -87,9 +87,33 @@
 <section id="projects">
   <h2>Selected Projects</h2>
   <p class="section-note">Whole-body loco-manipulation and robot learning at the Robotics &amp; AI Institute, plus favorite first-author work from earlier chapters.</p>
-  <div class="cards">
+  <div class="featured">
+    <h3><a href="https://rai-inst.com/resources/blog/combining-sampling-and-learning-for-dynamic-whole-body-manipulation/">Combining Sampling and Learning for Dynamic Whole-Body Manipulation</a></h3>
+    <p class="authors">The Whole-Body Control team, Robotics &amp; AI Institute &mdash;
+      <a href="https://itsmaks.com/">Maks Sorokin</a>,
+      <a href="https://simon-lc.github.io/">Simon Le Cléac'h</a>,
+      Jan Brüdigam, and colleagues &middot; RAI Institute blog, October 2025</p>
+    <div class="video-wrap">
+      <iframe src="https://www.youtube-nocookie.com/embed/nM_ZHzp8nQA?autoplay=1&mute=1&loop=1&playlist=nM_ZHzp8nQA&rel=0"
+        title="Dynamic Whole-Body Manipulation with Spot"
+        allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <p>Test-time steering of a pre-trained whole-body RL policy with a sampling-based
+    planner lets Spot upright, roll, drag, and stack 15&nbsp;kg tires &mdash; and adapt to new
+    objects and tasks at deployment without retraining. I support this work with
+    GPU-parallel SMPC data generation (MuJoCo Warp), training infrastructure, and
+    on-robot deployment tooling.</p>
+    <div class="tags">
+      <a href="https://rai-inst.com/resources/blog/combining-sampling-and-learning-for-dynamic-whole-body-manipulation/">RAI Blog</a>
+      <a href="https://sumo.rai-inst.com/">Sumo Project</a>
+      <a href="https://arxiv.org/abs/2604.08508">arXiv</a>
+      <a href="https://github.com/rai-opensource/sumo">Code</a>
+    </div>
+  </div>
 
-    <div class="card">
+  <div class="rows">
+
+    <div class="project-row">
       <a href="https://pages.rai-inst.com/smpc2rl/"><img src="img/smpc2rl-teaser.jpg" alt="Spot and G1 robots performing loco-manipulation tasks" loading="lazy"></a>
       <div class="body">
         <div class="venue">CoRL 2026</div>
@@ -104,28 +128,7 @@
         </div>
       </div>
     </div>
-
-    <div class="card">
-      <a href="https://www.youtube.com/watch?v=nM_ZHzp8nQA"><img src="https://i.ytimg.com/vi/nM_ZHzp8nQA/hqdefault.jpg" alt="Spot uprighting a car tire with whole-body manipulation" loading="lazy"></a>
-      <div class="body">
-        <div class="venue">RSS 2026 WCBM Workshop</div>
-        <h3>Sumo: Dynamic Whole-Body Loco-Manipulation</h3>
-        <p>Test-time steering of a pre-trained whole-body RL policy with a sampling-based
-        planner lets Spot upright, roll, drag, and stack 15&nbsp;kg tires &mdash; and adapt to new
-        objects and tasks at deployment without retraining. I support this work with
-        GPU-parallel SMPC data generation (MuJoCo Warp), training infrastructure, and
-        on-robot deployment tooling.</p>
-        <div class="tags">
-          <a href="https://sumo.rai-inst.com/">Project</a>
-          <a href="https://arxiv.org/abs/2604.08508">arXiv</a>
-          <a href="https://github.com/rai-opensource/sumo">Code</a>
-          <a href="https://www.youtube.com/watch?v=nM_ZHzp8nQA">Video</a>
-          <a href="https://rai-inst.com/resources/blog/combining-sampling-and-learning-for-dynamic-whole-body-manipulation/">RAI Blog</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
+    <div class="project-row">
       <a href="https://github.com/rai-opensource/judo"><img src="img/judo-teaser.jpg" alt="judo interactive GUI running a cartpole task with sampled trajectories" loading="lazy"></a>
       <div class="body">
         <div class="venue">Open Source</div>
@@ -140,8 +143,7 @@
         </div>
       </div>
     </div>
-
-    <div class="card">
+    <div class="project-row">
       <a href="https://arxiv.org/abs/2207.05824"><img src="img/ebm-teaser.jpg" alt="Conditional probability density learned by an energy-based model" loading="lazy"></a>
       <div class="body">
         <div class="venue">RSS 2022 Workshop</div>
@@ -164,8 +166,7 @@
         </div>
       </div>
     </div>
-
-    <div class="card">
+    <div class="project-row">
       <a href="https://www.youtube.com/watch?v=LgaFkWCtSGU"><img src="https://i.ytimg.com/vi/LgaFkWCtSGU/hqdefault.jpg" alt="TRI robot loading dishes from a kitchen sink" loading="lazy"></a>
       <div class="body">
         <div class="venue">TRI Demo &middot; RSS 2019</div>
@@ -181,8 +182,7 @@
         </div>
       </div>
     </div>
-
-    <div class="card">
+    <div class="project-row">
       <a href="https://www.youtube.com/watch?v=yOQ3Rb64h0E"><img src="https://i.ytimg.com/vi/yOQ3Rb64h0E/hqdefault.jpg" alt="Pose-graph sparsification ICRA 2018 spotlight video" loading="lazy"></a>
       <div class="body">
         <div class="venue">ICRA 2018</div>
@@ -198,8 +198,7 @@
         </div>
       </div>
     </div>
-
-    <div class="card">
+    <div class="project-row">
       <a href="https://dellaert.github.io/files/Ta14icuas.pdf"><img src="img/icuas-teaser.jpg" alt="A nonlinear constrained factor graph with its SQP primal and dual linear graphs" loading="lazy"></a>
       <div class="body">
         <div class="venue">ICUAS 2014</div>

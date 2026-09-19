@@ -206,3 +206,50 @@ footer {
 @media (max-width: 600px) {
   .hero-top { justify-content: center; text-align: center; }
 }
+
+/* Featured project (Simon/Maks style) */
+.featured { margin: 1.6rem 0 2.6rem; }
+.featured h3 { font-size: 1.3rem; margin: 0 0 0.3rem; }
+.featured h3 a { color: var(--text); }
+.featured .authors { color: var(--text-soft); font-size: 0.93rem; margin: 0 0 1rem; }
+.video-wrap {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 0.7rem;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: #000;
+  margin-bottom: 1rem;
+}
+.video-wrap iframe { width: 100%; height: 100%; border: 0; display: block; }
+.featured .tags { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: 0.8rem; }
+.featured .tags a { font-size: 0.85rem; background: var(--accent-soft); border-radius: 0.35rem; padding: 0.15rem 0.6rem; }
+
+/* Horizontal project rows (Maks style) */
+.project-row {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  border: 1px solid var(--border);
+  border-radius: 0.7rem;
+  background: var(--bg-soft);
+  box-shadow: var(--card-shadow);
+  overflow: hidden;
+  margin-bottom: 1.1rem;
+}
+.project-row > a:first-child { flex: 0 0 13rem; display: block; }
+.project-row > a:first-child img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  border-right: 1px solid var(--border);
+}
+.project-row .body { padding: 0.9rem 1.1rem 1rem; display: flex; flex-direction: column; }
+.project-row h3 { margin: 0 0 0.35rem; font-size: 1.05rem; }
+.project-row .venue { color: var(--accent); font-size: 0.82rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 0.4rem; }
+.project-row p { margin: 0 0 0.8rem; font-size: 0.93rem; color: var(--text-soft); flex: 1; }
+.project-row .tags { display: flex; flex-wrap: wrap; gap: 0.45rem; }
+.project-row .tags a { font-size: 0.83rem; background: var(--accent-soft); border-radius: 0.35rem; padding: 0.12rem 0.55rem; }
+@media (max-width: 640px) {
+  .project-row { flex-direction: column; }
+  .project-row > a:first-child { flex: none; }
+  .project-row > a:first-child img { aspect-ratio: 16/9; border-right: 0; border-bottom: 1px solid var(--border); }
+}
