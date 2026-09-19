@@ -303,6 +303,12 @@ footer {
   border: 1px solid var(--border);
   border-radius: 0.45rem;
 }
+/* Tile embeds are live thumbnails: block mouse events so YouTube never
+   overlays its title/controls/logo; clicks fall through to the wrapping link. */
+.project-row .thumb iframe,
+.past-entry .thumb iframe {
+  pointer-events: none;
+}
 .project-row .body { padding: 0.9rem 1.1rem 1rem; display: flex; flex-direction: column; }
 .project-row h3 { margin: 0 0 0.35rem; font-size: 1.05rem; }
 .project-row .venue { color: var(--accent); font-size: 0.82rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 0.4rem; }
