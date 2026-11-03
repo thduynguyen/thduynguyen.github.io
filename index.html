@@ -75,7 +75,8 @@
 <section id="news">
   <h2>News</h2>
   <ul class="news">
-    <li><time>Aug 2026</time><span><a href="https://amacati.github.io/">Martin Schuck</a>&rsquo;s paper on learning loco-manipulation from SMPC demonstrations with sparse offline-to-online RL was accepted to <b>CoRL 2026</b>. <a href="https://arxiv.org/abs/2608.12063">[arXiv]</a></span></li>
+    <li><time>Oct 2026</time><span>Our latest work, <b>Whole-Body Manipulation Outside the Lab</b>, is out: Spot rolls, uprights, and drags a 15&nbsp;kg tire fully onboard, using its own cameras. <a href="https://rai-inst.com/resources/blog/whole-body-manipulation-outside-the-lab/">[blog]</a> <a href="https://www.youtube.com/watch?v=nDIWulWjDz8">[video]</a></span></li>
+    <li><time>Aug 2026</time><span><a href="https://amacati.github.io/">Martin Schuck</a>&rsquo;s paper on learning loco-manipulation from SMPC demonstrations with sparse offline-to-online RL was accepted to <b>CoRL 2026</b> as an <b>oral spotlight</b> presentation. <a href="https://arxiv.org/abs/2608.12063">[arXiv]</a></span></li>
     <li><time>Jun 2026</time><span><a href="https://johnzhang3.github.io/">John Z. Zhang</a>&rsquo;s <b>Sumo</b> was presented at the RSS 2026 Workshop on Whole-Body Control and Manipulation. <a href="https://sumo.rai-inst.com/">[project]</a></span></li>
     <li><time>Jan 2026</time><span><a href="https://lhy.xyz/">Hongyu Li</a>&rsquo;s <b>NovaFlow</b> was accepted to <b>ICRA 2026</b>. <a href="https://novaflow.lhy.xyz/">[project]</a></span></li>
     <li><time>2025</time><span>We open-sourced <b>judo</b>, a user-friendly framework for sampling-based MPC. <a href="https://github.com/rai-opensource/judo">[code]</a></span></li>
@@ -87,35 +88,48 @@
 <section id="projects">
   <h2>Selected Projects</h2>
   <div class="featured">
-    <h3><a href="https://rai-inst.com/resources/blog/combining-sampling-and-learning-for-dynamic-whole-body-manipulation/">Combining Sampling and Learning for Dynamic Whole-Body Manipulation</a></h3>
-    <p class="authors">The Whole-Body Control team, Robotics &amp; AI Institute &mdash;
-      <a href="https://itsmaks.com/">Maks Sorokin</a>,
-      <a href="https://simon-lc.github.io/">Simon Le Cléac'h</a>,
-      Jan Brüdigam, and colleagues &middot; RAI Institute blog, October 2025</p>
+    <h3><a href="https://rai-inst.com/resources/blog/whole-body-manipulation-outside-the-lab/">Whole-Body Manipulation Outside the Lab</a></h3>
+    <p class="authors">The Whole-Body Control team, Robotics &amp; AI Institute &middot; RAI Institute blog, October 2026</p>
     <div class="video-wrap">
-      <iframe src="https://www.youtube-nocookie.com/embed/nM_ZHzp8nQA?autoplay=1&mute=1&loop=1&playlist=nM_ZHzp8nQA&rel=0"
-        title="Dynamic Whole-Body Manipulation with Spot"
+      <iframe src="https://www.youtube-nocookie.com/embed/nDIWulWjDz8?autoplay=1&mute=1&loop=1&playlist=nDIWulWjDz8&rel=0&start=12"
+        title="Whole-Body Manipulation Outside the Lab with Spot"
         allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe>
     </div>
-    <p>Test-time steering of a pre-trained whole-body RL policy with a sampling-based
-    planner lets Spot upright, roll, drag, and stack 15&nbsp;kg tires &mdash; and adapt to new
-    objects and tasks at deployment without retraining. I support this work with
-    GPU-parallel SMPC data generation (MuJoCo Warp), training infrastructure, and
-    on-robot deployment tooling.</p>
+    <p>Spot uses its legs, body, and arm together to roll, upright, and drag a 15&nbsp;kg
+    tire &mdash; now running fully onboard and finding the tire with its own depth cameras,
+    so it works outside the lab. An RL locomotion policy is paired with skill policies
+    trained in simulation, and <i>Crossfade RL</i> gradually replaces privileged simulator
+    inputs with camera-based perception.</p>
     <div class="tags">
-      <a href="https://rai-inst.com/resources/blog/combining-sampling-and-learning-for-dynamic-whole-body-manipulation/">RAI Blog</a>
-      <a href="https://sumo.rai-inst.com/">Sumo Project</a>
-      <a href="https://arxiv.org/abs/2604.08508">arXiv</a>
-      <a href="https://github.com/rai-opensource/sumo">Code</a>
+      <a href="https://rai-inst.com/resources/blog/whole-body-manipulation-outside-the-lab/">RAI Blog</a>
+      <a href="https://www.youtube.com/watch?v=nDIWulWjDz8">Video</a>
     </div>
   </div>
 
   <div class="rows">
 
     <div class="project-row">
+      <a href="https://www.youtube.com/watch?v=nM_ZHzp8nQA" class="thumb"><iframe src="https://www.youtube-nocookie.com/embed/nM_ZHzp8nQA?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=nM_ZHzp8nQA&amp;controls=0&amp;rel=0" title="Dynamic Whole-Body Manipulation with Spot" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe></a>
+      <div class="body">
+        <div class="venue">RAI Blog &middot; Oct 2025</div>
+        <h3>Combining Sampling and Learning for Dynamic Whole-Body Manipulation</h3>
+        <p>Test-time steering of a pre-trained whole-body RL policy with a sampling-based
+        planner lets Spot upright, roll, drag, and stack 15&nbsp;kg tires and adapt to new
+        objects and tasks without retraining. I support this work with GPU-parallel SMPC
+        data generation (MuJoCo Warp), training infrastructure, and on-robot deployment tooling.</p>
+        <div class="tags">
+          <a href="https://rai-inst.com/resources/blog/combining-sampling-and-learning-for-dynamic-whole-body-manipulation/">RAI Blog</a>
+          <a href="https://sumo.rai-inst.com/">Sumo Project</a>
+          <a href="https://arxiv.org/abs/2604.08508">arXiv</a>
+          <a href="https://github.com/rai-opensource/sumo">Code</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-row">
       <a href="https://pages.rai-inst.com/smpc2rl/" class="thumb"><video src="https://pages.rai-inst.com/smpc2rl/static/videos/deploy_spot_box_push.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Spot and G1 robots performing loco-manipulation tasks"></video></a>
       <div class="body">
-        <div class="venue">CoRL 2026</div>
+        <div class="venue">CoRL 2026 &middot; Oral Spotlight</div>
         <h3>Loco-Manipulation from SMPC Demonstrations</h3>
         <p>Sampling-based MPC acts as an automated expert generating massive offline
         datasets in simulation; sparse offline-to-online RL then distills robust
@@ -449,7 +463,7 @@
   <ul class="pubs">
     <li><span class="title">Learning Loco-Manipulation From SMPC Demonstrations With Sparse Offline-to-Online RL</span><br>
       M. Schuck, M. Sorokin, S. Manni, <span class="me">D. Ta</span>, A.P. Schoellig, M. Hutter, S. Le Cléac&rsquo;h, J. Brüdigam.
-      <span class="venue-name">CoRL</span>, 2026. <a href="https://arxiv.org/abs/2608.12063">arXiv</a></li>
+      <span class="venue-name">CoRL</span>, 2026 <b>(Oral Spotlight)</b>. <a href="https://arxiv.org/abs/2608.12063">arXiv</a></li>
     <li><span class="title">Sumo: Dynamic and Generalizable Whole-Body Loco-Manipulation</span><br>
       J.Z. Zhang, M. Sorokin, J. Brüdigam, B. Hung, S. Phillips, D. Yershov, F. Niroui, T. Zhao, L. Fermoselle, X. Zhu, C. Cao, <span class="me">D. Ta</span>, T. Pang, J. Wang, P. Culbertson, Z. Manchester, S. Le Cléac&rsquo;h.
       Presented at the <span class="venue-name">RSS 2026 Workshop on Whole-Body Control and Manipulation</span>. <a href="https://arxiv.org/abs/2604.08508">arXiv</a> &middot; <a href="https://sumo.rai-inst.com/">project</a></li>
